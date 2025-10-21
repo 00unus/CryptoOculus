@@ -94,13 +94,15 @@ namespace CryptoOculus.Services
                             ExchangeId = ExchangeId,
                             ExchangeName = ExchangeName,
                             BaseAsset = exchangeInfo.Symbols[i].BaseAsset.ToUpper(),
-                            QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper()
+                            QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper(),
+                            Url = $"https://www.binance.com/trade/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}?type=spot",
+                            SpotComission = 0.001
                         };
 
                         //adding price of pair
                         for (int a = 0; a < prices.Length; a++)
                         {
-                            if (prices[a].Symbol == exchangeInfo.Symbols[i].Symbol)
+                            if (prices[a].Symbol.Equals(exchangeInfo.Symbols[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 if (double.TryParse(prices[a].AskPrice, out double askPrice))
                                 {
@@ -119,7 +121,7 @@ namespace CryptoOculus.Services
                         //adding supported networks of base asset
                         for (int b = 0; b < contractAddresses.Length; b++)
                         {
-                            if (contractAddresses[b].Coin == exchangeInfo.Symbols[i].BaseAsset)
+                            if (contractAddresses[b].Coin.Equals(exchangeInfo.Symbols[i].BaseAsset, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 List<AssetNetwork> baseAssetNetworks = [];
 
@@ -131,7 +133,9 @@ namespace CryptoOculus.Services
                                         {
                                             NetworkName = contractAddresses[b].NetworkList[c].Network,
                                             DepositEnable = contractAddresses[b].NetworkList[c].DepositEnable,
-                                            WithdrawEnable = contractAddresses[b].NetworkList[c].WithdrawEnable
+                                            WithdrawEnable = contractAddresses[b].NetworkList[c].WithdrawEnable,
+                                            DepositUrl = $"https://www.binance.com/my/wallet/account/main/deposit/crypto/{contractAddresses[b].Coin.ToUpper()}",
+                                            WithdrawUrl = $"https://www.binance.com/my/wallet/account/main/withdrawal/crypto/{contractAddresses[b].Coin.ToUpper()}"
                                         };
 
                                         //Withraw fee
@@ -173,9 +177,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Binance/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/binance.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)

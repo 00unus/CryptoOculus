@@ -94,13 +94,15 @@ namespace CryptoOculus.Services
                             ExchangeId = ExchangeId,
                             ExchangeName = ExchangeName,
                             BaseAsset = exchangeInfo.Symbols[i].BaseAsset.ToUpper(),
-                            QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper()
+                            QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper(),
+                            Url = $"https://www.mexc.com/exchange/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}",
+                            SpotComission = double.Parse(exchangeInfo.Symbols[i].TakerCommission)
                         };
 
                         //adding price of pair
                         for (int a = 0; a < prices.Length; a++)
                         {
-                            if (prices[a].Symbol == exchangeInfo.Symbols[i].Symbol)
+                            if (prices[a].Symbol.Equals(exchangeInfo.Symbols[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 if (double.TryParse(prices[a].AskPrice, out double askPrice))
                                 {
@@ -119,7 +121,7 @@ namespace CryptoOculus.Services
                         //adding supported networks of base asset
                         for (int b = 0; b < contractAddresses.Length; b++)
                         {
-                            if (contractAddresses[b].Coin == exchangeInfo.Symbols[i].BaseAsset)
+                            if (contractAddresses[b].Coin.Equals(exchangeInfo.Symbols[i].BaseAsset, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 List<AssetNetwork> baseAssetNetworks = [];
                                 for (int c = 0; c < contractAddresses[b].NetworkList.Length; c++)
@@ -128,7 +130,11 @@ namespace CryptoOculus.Services
                                     {
                                         AssetNetwork assetNetwork = new()
                                         {
-                                            NetworkName = contractAddresses[b].NetworkList[c].Network
+                                            NetworkName = contractAddresses[b].NetworkList[c].Network,
+                                            DepositEnable = contractAddresses[b].NetworkList[c].DepositEnable,
+                                            WithdrawEnable = contractAddresses[b].NetworkList[c].WithdrawEnable,
+                                            DepositUrl = $"https://www.mexc.com/assets/deposit/{contractAddresses[b].Coin.ToUpper()}",
+                                            WithdrawUrl = $"https://www.mexc.com/assets/withdraw/{contractAddresses[b].Coin.ToUpper()}"
                                         };
 
                                         if (!String.IsNullOrWhiteSpace(contractAddresses[b].NetworkList[c].Contract))
@@ -149,13 +155,11 @@ namespace CryptoOculus.Services
                                             }
                                         }
 
-                                        assetNetwork.DepositEnable = contractAddresses[b].NetworkList[c].DepositEnable;
-                                        assetNetwork.WithdrawEnable = contractAddresses[b].NetworkList[c].WithdrawEnable;
                                         baseAssetNetworks.Add(assetNetwork);
                                     }
                                 }
 
-                                if (baseAssetNetworks.Count > 0 && (pair.AskPrice != 0 && pair.BidPrice != 0))
+                                if (baseAssetNetworks.Count > 0 && (pair.AskPrice != 0 || pair.BidPrice != 0))
                                 {
                                     pair.BaseAssetNetworks = [.. baseAssetNetworks];
                                 }
@@ -171,8 +175,7 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Mexc/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/mexc.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
 
                 return [.. pairs];
             }

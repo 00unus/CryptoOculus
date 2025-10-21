@@ -26,7 +26,7 @@ namespace CryptoOculus.Models
         [JsonPropertyName("maxTradeAmount")]
         public string? MaxTradeAmount { get; set; }
         [JsonPropertyName("takerFeeRate")]
-        public string? TakerFeeRate { get; set; }
+        public required string TakerFeeRate { get; set; }
         [JsonPropertyName("makerFeeRate")]
         public string? MakerFeeRate { get; set; }
         [JsonPropertyName("pricePrecision")]

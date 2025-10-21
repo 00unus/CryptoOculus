@@ -130,7 +130,9 @@ namespace CryptoOculus.Services
                     {
                         AssetNetwork assetNetwork = new()
                         {
-                            NetworkName = currencyChains[i].Chain
+                            NetworkName = currencyChains[i].Chain,
+                            DepositUrl = String.Empty,
+                            WithdrawUrl = String.Empty
                         };
 
                         if (!String.IsNullOrWhiteSpace(currencyChains[i].ContractAddress))
@@ -191,9 +193,8 @@ namespace CryptoOculus.Services
                 Currencies = [.. currencies]
             };
 
-            using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Gate/contractAddresses.json"));
-            sw.Write(JsonSerializer.Serialize(contractAddresses, Helper.serializeOptions));
-
+            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/gate-contractAddresses.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+            
             return contractAddresses;
         }
 
@@ -229,7 +230,7 @@ namespace CryptoOculus.Services
                 GateExchangeInfo[] exchangeInfo = JsonSerializer.Deserialize<GateExchangeInfo[]>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
 
                 //Query currency details and the smart contract address
-                string path = Path.Combine(env.ContentRootPath, "Cache/Gate/contractAddresses.json");
+                string path = Path.Combine(env.ContentRootPath, "Cache/gate-contractAddresses.json");
 
                 if (File.Exists(path))
                 {
@@ -279,13 +280,15 @@ namespace CryptoOculus.Services
                             ExchangeId = ExchangeId,
                             ExchangeName = ExchangeName,
                             BaseAsset = exchangeInfo[i].Base.ToUpper(),
-                            QuoteAsset = exchangeInfo[i].Quote.ToUpper()
+                            QuoteAsset = exchangeInfo[i].Quote.ToUpper(),
+                            Url = $"https://www.gate.com/trade/{exchangeInfo[i].Base.ToUpper()}_{exchangeInfo[i].Quote.ToUpper()}",
+                            SpotComission = double.Parse(exchangeInfo[i].Fee) / 100
                         };
 
                         //adding price of pair
                         for (int a = 0; a < prices.Length; a++)
                         {
-                            if (prices[a].Currency_pair == exchangeInfo[i].Id)
+                            if (prices[a].Currency_pair.Equals(exchangeInfo[i].Id, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 if (double.TryParse(prices[a].Lowest_ask, out double askPrice))
                                 {
@@ -316,7 +319,9 @@ namespace CryptoOculus.Services
                                         {
                                             NetworkName = contractAddresses.Currencies[b].Networks[c].NetworkName,
                                             DepositEnable = contractAddresses.Currencies[b].Networks[c].DepositEnable,
-                                            WithdrawEnable = contractAddresses.Currencies[b].Networks[c].WithdrawEnable
+                                            WithdrawEnable = contractAddresses.Currencies[b].Networks[c].WithdrawEnable,
+                                            DepositUrl = $"https://www.gate.com/myaccount/funds/deposit/{contractAddresses.Currencies[b].Currency.ToUpper()}",
+                                            WithdrawUrl = $"https://www.gate.com/myaccount/funds/withdraw/{contractAddresses.Currencies[b].Currency.ToUpper()}"
                                         };
 
                                         if (contractAddresses.Currencies[b].Networks[c].Address is not null)
@@ -357,9 +362,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Gate/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/gate.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)

@@ -109,7 +109,9 @@ namespace CryptoOculus.Services
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
                                 BaseAsset = exchangeInfo.Data[i].BaseCoin.ToUpper(),
-                                QuoteAsset = exchangeInfo.Data[i].QuoteCoin.ToUpper()
+                                QuoteAsset = exchangeInfo.Data[i].QuoteCoin.ToUpper(),
+                                Url = $"https://www.bitget.com/spot/{exchangeInfo.Data[i].BaseCoin.ToUpper()}{exchangeInfo.Data[i].QuoteCoin.ToUpper()}",
+                                SpotComission = double.Parse(exchangeInfo.Data[i].TakerFeeRate)
                             };
 
                             //adding price of pair
@@ -117,7 +119,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int a = 0; a < prices.Data.Length; a++)
                                 {
-                                    if (prices.Data[a].Symbol == exchangeInfo.Data[i].Symbol)
+                                    if (prices.Data[a].Symbol.Equals(exchangeInfo.Data[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Data[a].AskPr, out double askPrice))
                                         {
@@ -139,7 +141,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int b = 0; b < contractAddresses.Data.Length; b++)
                                 {
-                                    if (contractAddresses.Data[b].Coin == exchangeInfo.Data[i].BaseCoin)
+                                    if (contractAddresses.Data[b].Coin.Equals(exchangeInfo.Data[i].BaseCoin, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         List<AssetNetwork> baseAssetNetworks = [];
                                         for (int c = 0; c < contractAddresses.Data[b].Chains.Length; c++)
@@ -150,7 +152,9 @@ namespace CryptoOculus.Services
                                                 {
                                                     NetworkName = contractAddresses.Data[b].Chains[c].Chain,
                                                     DepositEnable = bool.Parse(contractAddresses.Data[b].Chains[c].Rechargeable),
-                                                    WithdrawEnable = bool.Parse(contractAddresses.Data[b].Chains[c].Withdrawable)
+                                                    WithdrawEnable = bool.Parse(contractAddresses.Data[b].Chains[c].Withdrawable),
+                                                    DepositUrl = $"https://www.bitget.com/asset/recharge?coinId={contractAddresses.Data[b].CoinId}",
+                                                    WithdrawUrl = $"https://www.bitget.com/asset/withdraw?coinId={contractAddresses.Data[b].CoinId}"
                                                 };
 
                                                 //Withraw fee
@@ -200,9 +204,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Bitget/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/bitget.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)

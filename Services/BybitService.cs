@@ -119,7 +119,9 @@ namespace CryptoOculus.Services
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
                                 BaseAsset = exchangeInfo.Result.List[i].BaseCoin.ToUpper(),
-                                QuoteAsset = exchangeInfo.Result.List[i].QuoteCoin.ToUpper()
+                                QuoteAsset = exchangeInfo.Result.List[i].QuoteCoin.ToUpper(),
+                                Url = $"https://www.bybit.com/trade/spot/{exchangeInfo.Result.List[i].BaseCoin.ToUpper()}/{exchangeInfo.Result.List[i].QuoteCoin.ToUpper()}",
+                                SpotComission = 0.0018
                             };
 
                             //adding price of pair
@@ -127,7 +129,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int a = 0; a < prices.Result.List.Length; a++)
                                 {
-                                    if (prices.Result.List[a].Symbol == exchangeInfo.Result.List[i].Symbol)
+                                    if (prices.Result.List[a].Symbol.Equals(exchangeInfo.Result.List[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Result.List[a].Ask1Price, out double askPrice))
                                         {
@@ -149,31 +151,26 @@ namespace CryptoOculus.Services
                             {
                                 for (int b = 0; b < contractAddresses.Result.Rows.Length; b++)
                                 {
-                                    if (contractAddresses.Result.Rows[b].Coin == exchangeInfo.Result.List[i].BaseCoin)
+                                    if (contractAddresses.Result.Rows[b].Coin.Equals(exchangeInfo.Result.List[i].BaseCoin, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         List<AssetNetwork> baseAssetNetworks = [];
+
                                         for (int c = 0; c < contractAddresses.Result.Rows[b].Chains.Length; c++)
                                         {
                                             if (contractAddresses.Result.Rows[b].Chains[c].ChainDeposit == "1" || contractAddresses.Result.Rows[b].Chains[c].ChainWithdraw == "1")
                                             {
                                                 AssetNetwork assetNetwork = new()
                                                 {
-                                                    NetworkName = contractAddresses.Result.Rows[b].Chains[c].Chain
+                                                    NetworkName = contractAddresses.Result.Rows[b].Chains[c].Chain,
+                                                    DepositEnable = contractAddresses.Result.Rows[b].Chains[c].ChainDeposit == "1",
+                                                    WithdrawEnable = contractAddresses.Result.Rows[b].Chains[c].ChainWithdraw == "1",
+                                                    DepositUrl = "https://www.bybit.com/user/assets/deposit",
+                                                    WithdrawUrl = "https://www.bybit.com/user/assets/withdraw"
                                                 };
 
                                                 if (!String.IsNullOrWhiteSpace(contractAddresses.Result.Rows[b].Chains[c].ContractAddress))
                                                 {
                                                     assetNetwork.Address = contractAddresses.Result.Rows[b].Chains[c].ContractAddress;
-                                                }
-
-                                                if (contractAddresses.Result.Rows[b].Chains[c].ChainDeposit == "1")
-                                                {
-                                                    assetNetwork.DepositEnable = true;
-                                                }
-
-                                                if (contractAddresses.Result.Rows[b].Chains[c].ChainWithdraw == "1")
-                                                {
-                                                    assetNetwork.WithdrawEnable = true;
                                                 }
 
                                                 //Withraw fee
@@ -218,8 +215,7 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Bybit/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/bybit.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
 
                 return [.. pairs];
             }

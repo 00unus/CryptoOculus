@@ -76,7 +76,7 @@ namespace CryptoOculus.Models
         public string? MakerCommission { get; set; }
 
         [JsonPropertyName("takerCommission")]
-        public string? TakerCommission { get; set; }
+        public required string TakerCommission { get; set; }
 
         [JsonPropertyName("quoteAmountPrecisionMarket")]
         public string? QuoteAmountPrecisionMarket { get; set; }

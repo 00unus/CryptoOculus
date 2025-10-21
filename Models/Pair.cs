@@ -22,7 +22,8 @@ namespace CryptoOculus.Models
         public double[]? BidPriceRange { get; set; }
         public double[][]? Bids { get; set; }
 
-        public double? SpotComission { get; set; }
+        public required string Url { get; set; }
+        public required double SpotComission { get; set; }
         public AssetNetwork[] BaseAssetNetworks { get; set; } = [];
 
         public Pair() { }
@@ -48,6 +49,7 @@ namespace CryptoOculus.Models
             BidPriceRange = pair.BidPriceRange?.ToArray();
             Bids = pair.Bids?.Select(innerArray => innerArray.ToArray()).ToArray();
 
+            Url = pair.Url;
             SpotComission = pair.SpotComission;
             BaseAssetNetworks = pair.BaseAssetNetworks?.Select(network => new AssetNetwork(network)).ToArray() ?? [];
         }
@@ -55,15 +57,19 @@ namespace CryptoOculus.Models
     public class AssetNetwork
     {
         public int? NetworkId { get; set; }
-        public string? NetworkName { get; set; }
+        public required string NetworkName { get; set; }
         public string? Address { get; set; }
         public bool DepositEnable { get; set; }
         public bool WithdrawEnable { get; set; }
         public double? TransferTax { get; set; }
         public double? WithdrawFee { get; set; }
         public double? DepositTax { get; set; }
+        public required string DepositUrl { get; set; }
+        public required string WithdrawUrl { get; set; }
 
         public AssetNetwork() { }
+
+        [SetsRequiredMembers]
         public AssetNetwork(AssetNetwork assetNetwork)
         {
             NetworkId = assetNetwork.NetworkId;
@@ -74,6 +80,8 @@ namespace CryptoOculus.Models
             TransferTax = assetNetwork.TransferTax;
             WithdrawFee = assetNetwork.WithdrawFee;
             DepositTax = assetNetwork.DepositTax;
+            DepositUrl = assetNetwork.DepositUrl;
+            WithdrawUrl = assetNetwork.WithdrawUrl;
         }
     }
 }

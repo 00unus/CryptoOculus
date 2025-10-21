@@ -11,7 +11,7 @@ namespace CryptoOculus.Models
         [JsonPropertyName("quote")]
         public required string Quote { get; set; }
         [JsonPropertyName("fee")]
-        public string? Fee { get; set; }
+        public required string Fee { get; set; }
         [JsonPropertyName("min_base_amount")]
         public string? Min_base_amount { get; set; }
         [JsonPropertyName("min_quote_amount")]
@@ -79,7 +79,7 @@ namespace CryptoOculus.Models
     public class GatePrice
     {
         [JsonPropertyName("currency_pair")]
-        public string? Currency_pair { get; set; }
+        public required string Currency_pair { get; set; }
         [JsonPropertyName("last")]
         public string? Last { get; set; }
         [JsonPropertyName("lowest_ask")]
