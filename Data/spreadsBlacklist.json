@@ -1,0 +1,238 @@
+{
+  "SpreadsBlacklist": {
+    "10%||%7%||%MPC%||%USDT%||%MPC%||%USDT": {
+      "Date": "2025-10-09T17:45:56.9133149+00:00",
+      "BuyExchangeId": 10,
+      "SellExchangeId": 7,
+      "BuyExchangePairBaseAsset": "MPC",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "MPC",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "10%||%1%||%MPC%||%USDT%||%MPC%||%USDT": {
+      "Date": "2025-10-09T17:45:58.0061234+00:00",
+      "BuyExchangeId": 10,
+      "SellExchangeId": 1,
+      "BuyExchangePairBaseAsset": "MPC",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "MPC",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "3%||%21%||%GTC%||%USDT%||%GTC%||%USD": {
+      "Date": "2025-10-09T17:45:59.1077064+00:00",
+      "BuyExchangeId": 3,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "GTC",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "GTC",
+      "SellExchangePairQuoteAsset": "USD"
+    },
+    "12%||%13%||%MIM%||%USDT%||%MIM%||%USDT": {
+      "Date": "2025-10-09T17:45:59.8311207+00:00",
+      "BuyExchangeId": 12,
+      "SellExchangeId": 13,
+      "BuyExchangePairBaseAsset": "MIM",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "MIM",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "3%||%19%||%LAND%||%USDT%||%LAND%||%USDT": {
+      "Date": "2025-10-09T17:46:00.4580527+00:00",
+      "BuyExchangeId": 3,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "LAND",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "LAND",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "20%||%21%||%APU%||%USDT%||%APU%||%USD": {
+      "Date": "2025-10-09T17:46:01.1051383+00:00",
+      "BuyExchangeId": 20,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "APU",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "APU",
+      "SellExchangePairQuoteAsset": "USD"
+    },
+    "10%||%21%||%MOON%||%USDT%||%MOON%||%USD": {
+      "Date": "2025-10-09T17:46:01.7060052+00:00",
+      "BuyExchangeId": 10,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "MOON",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "MOON",
+      "SellExchangePairQuoteAsset": "USD"
+    },
+    "14%||%19%||%YZY%||%USDT%||%YZY%||%USDT": {
+      "Date": "2025-10-09T17:46:02.3355199+00:00",
+      "BuyExchangeId": 14,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "YZY",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "YZY",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "10%||%19%||%YZY%||%USDT%||%YZY%||%USDT": {
+      "Date": "2025-10-09T17:46:02.9422054+00:00",
+      "BuyExchangeId": 10,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "YZY",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "YZY",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "5%||%21%||%XRT%||%USDT%||%XRT%||%USD": {
+      "Date": "2025-10-09T17:46:03.5515654+00:00",
+      "BuyExchangeId": 5,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "XRT",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "XRT",
+      "SellExchangePairQuoteAsset": "USD"
+    },
+    "21%||%13%||%MIM%||%USD%||%MIM%||%USDT": {
+      "Date": "2025-10-09T17:46:04.0902106+00:00",
+      "BuyExchangeId": 21,
+      "SellExchangeId": 13,
+      "BuyExchangePairBaseAsset": "MIM",
+      "BuyExchangePairQuoteAsset": "USD",
+      "SellExchangePairBaseAsset": "MIM",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "16%||%10%||%SHIBDOGE%||%USDT%||%SHIBDOGE%||%USDT": {
+      "Date": "2025-10-09T17:46:04.8248096+00:00",
+      "BuyExchangeId": 16,
+      "SellExchangeId": 10,
+      "BuyExchangePairBaseAsset": "SHIBDOGE",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "SHIBDOGE",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "19%||%12%||%BERRY%||%USDT%||%BERRY%||%USDT": {
+      "Date": "2025-10-09T17:46:06.0817611+00:00",
+      "BuyExchangeId": 19,
+      "SellExchangeId": 12,
+      "BuyExchangePairBaseAsset": "BERRY",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "BERRY",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "3%||%12%||%QTC%||%USDT%||%QTC%||%USDT": {
+      "Date": "2025-10-09T17:46:06.8173927+00:00",
+      "BuyExchangeId": 3,
+      "SellExchangeId": 12,
+      "BuyExchangePairBaseAsset": "QTC",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "QTC",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "19%||%1%||%AXOL%||%USDT%||%AXOL%||%USDT": {
+      "Date": "2025-10-09T17:46:07.8779563+00:00",
+      "BuyExchangeId": 19,
+      "SellExchangeId": 1,
+      "BuyExchangePairBaseAsset": "AXOL",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "AXOL",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "21%||%5%||%TRU%||%USD%||%TRU%||%USDT": {
+      "Date": "2025-10-09T17:46:08.733573+00:00",
+      "BuyExchangeId": 21,
+      "SellExchangeId": 5,
+      "BuyExchangePairBaseAsset": "TRU",
+      "BuyExchangePairQuoteAsset": "USD",
+      "SellExchangePairBaseAsset": "TRU",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "7%||%19%||%BROCCOLI%||%USDT%||%BROCCOLI%||%USDT": {
+      "Date": "2025-10-09T17:46:10.8821914+00:00",
+      "BuyExchangeId": 7,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "BROCCOLI",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "BROCCOLI",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "20%||%19%||%BROCCOLI%||%USDT%||%BROCCOLI%||%USDT": {
+      "Date": "2025-10-09T17:46:11.7938873+00:00",
+      "BuyExchangeId": 20,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "BROCCOLI",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "BROCCOLI",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "19%||%16%||%GM%||%USDT%||%GM%||%USDT": {
+      "Date": "2025-10-09T17:46:13.2727607+00:00",
+      "BuyExchangeId": 19,
+      "SellExchangeId": 16,
+      "BuyExchangePairBaseAsset": "GM",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "GM",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "21%||%20%||%OXY%||%USD%||%OXY%||%USDT": {
+      "Date": "2025-10-09T17:46:14.3282563+00:00",
+      "BuyExchangeId": 21,
+      "SellExchangeId": 20,
+      "BuyExchangePairBaseAsset": "OXY",
+      "BuyExchangePairQuoteAsset": "USD",
+      "SellExchangePairBaseAsset": "OXY",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "21%||%3%||%AIR%||%USD%||%AIR%||%USDT": {
+      "Date": "2025-10-09T17:46:15.0637032+00:00",
+      "BuyExchangeId": 21,
+      "SellExchangeId": 3,
+      "BuyExchangePairBaseAsset": "AIR",
+      "BuyExchangePairQuoteAsset": "USD",
+      "SellExchangePairBaseAsset": "AIR",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "3%||%19%||%NYAN%||%USDT%||%NYAN%||%USDT": {
+      "Date": "2025-10-09T17:46:49.3302356+00:00",
+      "BuyExchangeId": 3,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "NYAN",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "NYAN",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "19%||%1%||%MEMECOIN%||%USDT%||%MEMECOIN%||%USDT": {
+      "Date": "2025-10-09T17:46:53.8781115+00:00",
+      "BuyExchangeId": 19,
+      "SellExchangeId": 1,
+      "BuyExchangePairBaseAsset": "MEMECOIN",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "MEMECOIN",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "1%||%19%||%LINE%||%USDT%||%LINE%||%USDT": {
+      "Date": "2025-10-09T17:46:57.2032078+00:00",
+      "BuyExchangeId": 1,
+      "SellExchangeId": 19,
+      "BuyExchangePairBaseAsset": "LINE",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "LINE",
+      "SellExchangePairQuoteAsset": "USDT"
+    },
+    "1%||%21%||%NODL%||%USDT%||%NODL%||%USD": {
+      "Date": "2025-10-09T17:47:00.8161797+00:00",
+      "BuyExchangeId": 1,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "NODL",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "NODL",
+      "SellExchangePairQuoteAsset": "USD"
+    },
+    "3%||%21%||%NODL%||%USDT%||%NODL%||%USD": {
+      "Date": "2025-10-09T17:47:01.7865108+00:00",
+      "BuyExchangeId": 3,
+      "SellExchangeId": 21,
+      "BuyExchangePairBaseAsset": "NODL",
+      "BuyExchangePairQuoteAsset": "USDT",
+      "SellExchangePairBaseAsset": "NODL",
+      "SellExchangePairQuoteAsset": "USD"
+    }
+  }
+}

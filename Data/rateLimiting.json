@@ -1,0 +1,277 @@
+{
+  "RateLimiting": {
+    "EndpointRateLimit": {
+      "api.mexc.com/api/v3/exchangeInfo": {
+        "Limit": 50,
+        "WindowSeconds": 10
+      },
+      "api.mexc.com/api/v3/capital/config/getall": {
+        "Limit": 50,
+        "WindowSeconds": 10
+      },
+      "api.mexc.com/api/v3/ticker/bookTicker": {
+        "Limit": 500,
+        "WindowSeconds": 10
+      },
+      "api.mexc.com/api/v3/depth": {
+        "Limit": 500,
+        "WindowSeconds": 10
+      },
+      "api.bybit.com/v5/asset/coin/query-info": {
+        "Limit": 5,
+        "WindowSeconds": 1
+      },
+      "api.gateio.ws/api/v4/spot/currency_pairs": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.gateio.ws/api/v4/spot/tickers": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.gateio.ws/api/v4/wallet/currency_chains": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.gateio.ws/api/v4/spot/order_book": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.bitget.com/api/v2/spot/public/symbols": {
+        "Limit": 20,
+        "WindowSeconds": 1
+      },
+      "api.bitget.com/api/v2/spot/public/coins": {
+        "Limit": 3,
+        "WindowSeconds": 1
+      },
+      "api.bitget.com/api/v2/spot/market/tickers": {
+        "Limit": 20,
+        "WindowSeconds": 1
+      },
+      "api.bitget.com/api/v2/spot/market/orderbook": {
+        "Limit": 20,
+        "WindowSeconds": 1
+      },
+      "api-cloud.bitmart.com/spot/v1/symbols/details": {
+        "Limit": 12,
+        "WindowSeconds": 2
+      },
+      "api-cloud.bitmart.com/account/v1/currencies": {
+        "Limit": 2,
+        "WindowSeconds": 2
+      },
+      "api-cloud.bitmart.com/spot/quotation/v3/tickers": {
+        "Limit": 10,
+        "WindowSeconds": 2
+      },
+      "api-cloud.bitmart.com/spot/quotation/v3/books": {
+        "Limit": 15,
+        "WindowSeconds": 2
+      },
+      "open-api.bingx.com/openApi/wallets/v1/capital/config/getall": {
+        "Limit": 5,
+        "WindowSeconds": 1
+      },
+      "api.huobi.pro/market/depth": {
+        "Limit": 4000,
+        "WindowSeconds": 300
+      },
+      "www.okx.com/api/v5/public/instruments": {
+        "Limit": 20,
+        "WindowSeconds": 2
+      },
+      "www.okx.com/api/v5/asset/currencies": {
+        "Limit": 6,
+        "WindowSeconds": 1
+      },
+      "www.okx.com/api/v5/market/tickers": {
+        "Limit": 20,
+        "WindowSeconds": 2
+      },
+      "www.okx.com/api/v5/market/books": {
+        "Limit": 40,
+        "WindowSeconds": 2
+      },
+      "api.lbank.info/v2/currencyPairs.do": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.lbank.info/v2/assetConfigs.do": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "ccapi.ierpifvid.com/coin-wallet-center/wallet/address/deposit/detail/v1": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "ccapi.ierpifvid.com/spot-trade-center/order/feeRate": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.lbank.info/v2/ticker/24hr.do": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.lbank.info/v2/depth.do": {
+        "Limit": 200,
+        "WindowSeconds": 10
+      },
+      "api.coinw.com/api/v1/public": {
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      "api-pub.bitfinex.com/v2/tickers": {
+        "Limit": 30,
+        "WindowSeconds": 60
+      },
+      "api-pub.bitfinex.com/v2/conf/pub{{{...}}}": {
+        "Limit": 90,
+        "WindowSeconds": 60
+      },
+      "api-pub.bitfinex.com/v2/book{{{...}}}": {
+        "Limit": 240,
+        "WindowSeconds": 60
+      },
+      "sapi.xt.com/v4/public/symbol": {
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      "sapi.xt.com/v4/public/wallet/support/currency": {
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      "sapi.xt.com/v4/public/ticker": {
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      "sapi.xt.com/v4/public/depth": {
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      "ascendex.com/api/pro/v1/depth": {
+        "Limit": 80,
+        "WindowSeconds": 60
+      },
+      "api.kraken.com/0/public/Depth": {
+        "Limit": 5000,
+        "WindowSeconds": 1
+      },
+      "api.honeypot.is/v2/IsHoneypot": {
+        "Limit": 50,
+        "WindowSeconds": 5
+      }
+    },
+
+    "DomainWeight": {
+      "DomainLimits": {
+        "api.binance.com": {
+          "Limit": 6000,
+          "WindowSeconds": 60
+        },
+        "api.bybit.com": {
+          "Limit": 600,
+          "WindowSeconds": 5
+        },
+        "api.kucoin.com": {
+          "Limit": 2000,
+          "WindowSeconds": 30
+        },
+        "api.coinex.com": {
+          "Limit": 400,
+          "WindowSeconds": 1
+        },
+        "api.phemex.com": {
+          "Limit": 5000,
+          "WindowSeconds": 300
+        }
+      },
+      "EndpointWeights": {
+        "api.binance.com/api/v3/exchangeInfo": 20,
+        "api.binance.com/sapi/v1/capital/config/getall": 10,
+        "api.binance.com/api/v3/ticker/24hr": 80,
+        "api.binance.com/api/v3/depth": 5,
+        "api.bybit.com/v5/market/instruments-info": 1,
+        "api.bybit.com/v5/asset/coin/query-info": 1,
+        "api.bybit.com/v5/market/tickers": 1,
+        "api.bybit.com/v5/market/orderbook": 1,
+        "api.kucoin.com/api/v2/symbols": 4,
+        "api.kucoin.com/api/v3/currencies": 3,
+        "api.kucoin.com/api/v1/market/allTickers": 15,
+        "api.kucoin.com/api/v1/market/orderbook/level2_100": 2,
+        "api.coinex.com/v2/spot/market": 1,
+        "api.coinex.com/v2/assets/info": 1,
+        "api.coinex.com/v2/assets/all-deposit-withdraw-config": 1,
+        "api.coinex.com/v2/spot/ticker": 1,
+        "api.coinex.com/v2/spot/depth": 1,
+        "api.phemex.com/public/products": 1,
+        "api.phemex.com/md/spot/ticker/24hr/all": 1,
+        "api.phemex.com/phemex-deposit/wallets/api/chainCfg": 1,
+        "api.phemex.com/phemex-withdraw/wallets/api/asset/info": 1,
+        "api.phemex.com/md/orderbook": 1
+      }
+    },
+
+    "RuleLimits": [
+      {
+        "Name": "BingxIpGroup1",
+        "Limit": 100,
+        "WindowSeconds": 10
+      },
+      {
+        "Name": "BingxIpGroup2",
+        "Limit": 1000,
+        "WindowSeconds": 10
+      },
+      {
+        "Name": "BingxIpGroup3",
+        "Limit": 1000,
+        "WindowSeconds": 10
+      },
+      {
+        "Name": "DigifinexDepositDetails",
+        "Limit": 45,
+        "WindowSeconds": 1
+      },
+      {
+        "Name": "DigifinexWithdrawDetails",
+        "Limit": 20,
+        "WindowSeconds": 1
+      },
+      {
+        "Name": "ProbitRatelimitGroup3",
+        "Limit": 10,
+        "WindowSeconds": 1
+      },
+      {
+        "Name": "PhemexOthersIpGroup",
+        "Limit": 300,
+        "WindowSeconds": 60
+      },
+      {
+        "Name": "PoloniexPublicData1",
+        "Limit": 30,
+        "WindowSeconds": 1
+      },
+      {
+        "Name": "PoloniexPublicData2",
+        "Limit": 200,
+        "WindowSeconds": 1
+      }
+    ],
+
+    "ConcurrencyLimits": [
+      {
+        "Name": "CoinwLoginTokenLimit",
+        "MaxConcurrency": 1
+      }
+    ],
+
+    "ProxyGroups": [
+      {
+        "ProxyIds": "0-99",
+        "MaxConcurrency": 5000
+      }
+    ]
+  }
+}

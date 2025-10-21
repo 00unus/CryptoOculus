@@ -1,0 +1,44 @@
+{
+  "CoinsBlacklist": {
+    "AI%||%19": {
+      "Date": "2025-10-07T18:20:31.4609914+00:00",
+      "ExchangeId": 19,
+      "BaseAsset": "AI"
+    },
+    "TRUMPSOL%||%19": {
+      "Date": "2025-10-07T18:21:02.4369356+00:00",
+      "ExchangeId": 19,
+      "BaseAsset": "TRUMPSOL"
+    },
+    "AIA%||%14": {
+      "Date": "2025-10-07T18:21:36.8124949+00:00",
+      "ExchangeId": 14,
+      "BaseAsset": "AIA"
+    },
+    "NEIROETH%||%19": {
+      "Date": "2025-10-07T18:22:13.0661914+00:00",
+      "ExchangeId": 19,
+      "BaseAsset": "NEIROETH"
+    },
+    "NEIRO%||%19": {
+      "Date": "2025-10-07T18:27:44.3580195+00:00",
+      "ExchangeId": 19,
+      "BaseAsset": "NEIRO"
+    },
+    "KDA%||%14": {
+      "Date": "2025-10-07T18:30:02.9498913+00:00",
+      "ExchangeId": 14,
+      "BaseAsset": "KDA"
+    },
+    "MYX%||%21": {
+      "Date": "2025-10-07T18:32:03.2578934+00:00",
+      "ExchangeId": 21,
+      "BaseAsset": "MYX"
+    },
+    "BCHSV%||%20": {
+      "Date": "2025-10-13T13:27:33.1263133+00:00",
+      "ExchangeId": 20,
+      "BaseAsset": "BCHSV"
+    }
+  }
+}

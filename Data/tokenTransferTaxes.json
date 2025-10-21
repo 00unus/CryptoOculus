@@ -1,0 +1,5416 @@
+{
+  "TokenTransferTaxes": [
+    {
+      "ContractAddress": "0X8ED97A637A790BE1FEFF5E888D43629DC05408F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X899357E54C2C4B014EA50A9A7BF140BA6DF2EC73",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1BC0C42215582D5A085795F4BADBAC3FF36D1BCB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7ABC8A5768E6BE61A6C693A6E4EACB5B60602C4D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F5D2FB29FB7D3CFEE444A200298F468908CC942",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F573D6FB3F13D689FF844B4CE37794D79A7FF1C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD01409314ACB3B245CEA9500ECE3F6FD4D70EA30",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X421B05CF5CE28CB7347E73E2278E84472F0E4A88",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1776E1F26F98B1A5DF9CD347953A26DD3CB46671",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC598275452FA319D75EE5F176FD3B8384925B425",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1F410F13B6007FCA76833EE7EB58478D47BC5EF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6C6EE5E31D828DE241282B9606C8E98EA48526E2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4E9623B7E5B6438542458F5EE828D65C24D3AF8C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6587EFF07D9AE00F05FAE2A3A032B2C1A1DFCE41",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB62132E35A6C13EE1EE0F84DC5D40BAD8D815206",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDAB396CCF3D84CF2D07C4454E10C8A6F5B008D2B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5026F006B85729A8B14553FAE6AF249AD16C9AAB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X163F8C2467924BE0AE7B5347228CABF260318753",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC83E27F270CCE0A3A3A29521173A83F402C1768B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3506424F91FD33084466F402D5D97F05F8E3B4AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0BC529C00C6401AEF6D220BE8C6EA1667F6AD93E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD1D2EB1B1E90B638588728B4130137D262C87CAE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC8807F0F5BA3FA45FFBDC66928D71C5289249014",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1CE270557C1F68CFB577B856766310BF8B47FD9C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X55296F69F40EA6D20E478533C15A6B08B654E758",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9840652DC04FB9DB2C43853633F0F62BE6F00F98",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X514910771AF9CA656AF840DFF83E8264ECF986CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X62DC4817588D53A056CBBD18231D91FFCCD34B2A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2F714D7B9A035D4CE24AF8D9B6091C07E37F43FB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA0B73E1FF0B80914AB6FE0444E65848C4C34450B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X590830DFDF9A3F68AFCDDE2694773DEBDF267774",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X67466BE17DF832165F8C80A5A120CCC652BD7E69",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X51CB253744189F11241BECB29BEDD3F1B5384FDB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFEBE8C1ED424DBF688551D4E2267E7A53698F0AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2B72867C32CF673F7B02D208B26889FED353B1F8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBAB528425EDB1E0E36D3719BC3307D9C8CCE8888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE6BFD33F52D82CCB5B37E16D3DD81F9FFDABB195",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4D224452801ACED8B2F0AEBE155379BB5D594381",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6679EB24F59DFE111864AEC72B443D1DA666B360",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C47FCBCF4FC23F57B59527A96EE3B0944C3946C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5A98FCBEA516CF06857215779FD812CA3BEF1B32",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0E7779E698052F8FE56C415C3818FCF89DE9AC6D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3EC2156D4C0A9CBDAB4A016633B7BCF6A8D68EA2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X15B7C0C907E4C6B9ADAAAABC300C08991D6CEA05",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3DC8E2D80B6215A1BCCAE4D38715C3520581E77C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X12970E6868F88F6557B76120662C1B3E50A646BF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X441761326490CACF7AF299725B6292597EE822C2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCBDE0453D4E7D748077C1B0AC2216C011DD2F406",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X24FCFC492C1393274B6BCD568AC9E225BEC93584",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5732046A883704404F284CE41FFADD5B007FD668",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9D65FF81A3C488D585BBFB0BFE3C7707C7917F54",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X045C4324039DA91C52C55DF5D785385AAB073DCF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC335DF7C25B72EEC661D5AA32A7C2B7B2A1D1874",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9D0D41DF4CA809DC16A9BFF646D3C6CBC4EBC707",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDC9AC3C20D1ED0B540DF9B1FEDC10039DF13F99C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9840652DC04FB9DB2C43853633F0F62BE6F00F98",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3567AA22CD3AB9AEF23D7E18EE0D7CF16974D7E6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2E44F3F609FF5AA4819B323FD74690F07C3607C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD533A949740BB3306D119CC777FA900BA034CD52",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D438F3B5175BEBC262BF23753C1E53D03432BDE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8CEDB0680531D26E62ABDBD0F4C5428B7FDC26D5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X062CA2D2F1AF8C203FA3AD5298FD6FAA4E44E897",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X50D1C9771902476076ECFC8B2A83AD6B9355A4C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0E09FABB73BD3ADE0A17ECC321FD13A19E81CE82",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X812BA41E071C7B7FA4EBCFB62DF5F45F6FA853EE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X761D38E5DDF6CCF6CF7C55759D5210750B5D60F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD86E6EF14B96D942EF0ABF0720C549197EA8C528",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3D658390460295FB963F54DC0899CFB1C30776DF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC0634090F2FE6C6D75E61BE2B949464ABB498973",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2E85AE1C47602F7927BCABC2FF99C40AA222AE15",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X45E02BC2875A2914C4F585BBF92A6F28BC07CB70",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA6C6EA2E0140849BE02A3A34780CF61B766916C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X25F8087EAD173B73D6E8B84329989A8EEA16CF73",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X698B1D54E936B9F772B8F58447194BBC82EC1933",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2D060EF4D6BF7F9E5EDDE373AB735513C0E4F944",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC0C240C870606A5CB3150795E2D0DFFF9F1F7456",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA6C0C097741D55ECD9A3A7DEF3A8253FD022CEB9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF411903CBC70A74D22900A5DE66A2DDA66507255",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAA95F26E30001251FB905D264AA7B00EE9DF6C18",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X32B86B99441480A7E5BD3A26C124EC2373E3F015",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X003D87D02A2A01E9E8A20F507C83E15DD83A33D1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8143182A775C54578C8B7B3EF77982498866945D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC5FB36DD2FB59D3B98DEFF88425A3F425EE469ED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X30D20208D987713F46DFD34EF128BB16C404D10F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X594DAAD7D77592A2B97B725A7AD59D7E188B5BFA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA100000625A3754423978A60C9317C58A424E3D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB40F2E5291C3DB45ABB0CA8DF76F1C21E9F112A9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6397DE0F9AEDC0F7A8FA8B438DDE883B9C201010",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEE2A03AA6DACF51C18679C516AD5283D8E7C2637",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8207C1FFC5B6804F6024322CCF34F29C3541AE26",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2DA719DB753DFA10A62E140F436E1D67F2DDB0D6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X551897F8203BD131B350601D3AC0679BA0FC0136",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF486AD071F3BEE968384D2E39E2D8AF0FCF6FD46",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB23D80F5FEFCDDAA212212F028021B41DED428CF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF5B5EFC906513B4344EBABCF47A04901F99F09F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X27CF096DB452425C51DAA356E7D9C574C75E8737",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0A43FC31A73013089DF59194872ECAE4CAE14444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBBBBCA6A901C926F240B89EACB641D8AEC7AEAFD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X837A130AED114300BAB4F9F1F4F500682F7EFD48",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3845BADADE8E6DFF049820680D1F14BD3903A5D0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4691937A7508860F876C9C0A2A617E7D9E945D4B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6AA56E1D98B3805921C170EB4B3FE7D4FDA6D89B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF4C0EFC13EA4221AD8278FB53727015471DCE938",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCC8FA225D80B9C7D42F96E9570156C65D6CAAA25",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEAC9873291DDACA754EA5642114151F3035C67A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XED6E000DEF95780FB89734C07EE2CE9F6DCAF110",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1495BC9E44AF1F8BCB62278D2BEC4540CF0C05EA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4A220E6096B25EADB88358CB44068A3248254675",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDAF1695C41327B61B9B9965AC6A5843A3198CF07",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X14FEE680690900BA0CCCFC76AD70FD1B95D10E16",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFF836A5821E69066C87E268BC51B849FAB94240C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X16FAF9DAA401AA42506AF503AA3D80B871C467A3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X57B946008913B82E4DF85F501CBAED910E58D26C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEBB66A88CEDD12BFE3A289DF6DFEE377F2963F12",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB1C9D42FA4BA691EFE21656A7E6953D999B990C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDBB5CF12408A3AC17D668037CE289F9EA75439D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD9016A907DC0ECFA3CA425AB20B6B785B42F2373",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X817162975186D4D53DBF5A7377DD45376E2D2FC5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEA36AF87DF952FD4C9A05CD792D370909BBDA8DB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1C4CCA7C5DB003824208ADDA61BD749E55F463A3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X408E41876CCCDC0F92210600EF50372656052A38",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7C8217517ED4711FE2DECCDFEFFE8D906B9AE11F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X505B5EDA5E25A67E1C24A2BF1A527ED9EB88BF04",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X320623B8E4FF03373931769A31FC52A4E78B5D70",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD4F4D0A10BCAE123BB6655E8FE93A30D01EEBD04",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB7B37B81D4497AB317FC9D4A370CF243043D6BBE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC08CD26474722CE93F4D0C34D16201461C10AA8C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC748673057861A797275CD8A068ABB95A902E8DE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0215ED0FE07951B2CD68E1B39FFBD0A841FE3C6E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4385328CC4D643CA98DFEA734360C0F596C83449",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE02DF9E3E622DEBDD69FB838BB799E3F168902C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4D1C297D39C5C1277964D0E3F8AA901493664530",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDCE40C14D5956F8B8BA912402BA73B4D4D599612",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X450593BF7F2D7E559E38496CFB06BDCE5E963795",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B5F49487EA7B3609B1AD05459BE420548789F1F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X157A6DF6B74F4E5E45AF4E4615FDE7B49225A662",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF6CB4AD242BAB681EFFC5DE40F7C8FF921A12D63",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9BBA915F036158582C20B51113B925F243A1A1A1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD26114CD6EE289ACCF82350C8D8487FEDB8A0C07",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC477D038D5420C6A9E0B031712F61C5120090DE9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X75231F58B43240C9718DD58B4967C5114342A86C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDD02BC212E79ACDAB476C9295CDEA8A61099CB79",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8DF723295214EA6F21026EEEB4382D475F146F9F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X744D70FDBE2BA4CF95131626614A1763DF805B9E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD85A6AE55A7F33B0EE113C234D2EE308EDEAF7FD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B9278B94A1112CAD404048903B8D343A810B07E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X73FBD93BFDA83B111DDC092AA3A4CA77FD30D380",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5B6BF0C7F989DE824677CFBD507D9635965E9CD3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X549020A9CB845220D66D3E9C6D9F9EF61C981102",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X610DBD98A28EBBA525E9926B6AAF88F9159EDBFD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1165ECEBFA6693CF64AC5EF49F1B32E8ACBFFE01",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7D8146CF21E8D7CBE46054E01588207B51198729",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8263CD1601FE73C066BF49CC09841F35348E3BE0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6952C5408B9822295BA4A7E694D0C5FFDB8FE320",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X78CBEC65C55F143A9178B63243119806A659D2EF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3010CCB5419F1EF26D40A7CD3F0D707A0FA127DC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0000000000095413AFC295D19EDEB1AD7B71C952",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAEA46A60368A7BD060EEC7DF8CBA43B7EF41AD85",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC555D625828C4527D477E595FF1DD5801B4A600E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X27AE27110350B98D564B9A3EED31BAEBC82D878D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0BC37BEA9068A86C221B8BD71EA6228260DAD5A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB42DA273158B0F642F59F2BA7CC1D5457481677",
+      "TransferFee": 1.24
+    },
+    {
+      "ContractAddress": "0X783C3F003F172C6AC5AC700218A357D2D66EE2A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8E1E6BF7E13C400269987B65AB2B5724B016CAEF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X943AF2ECE93118B973C95C2F698EE9D15002E604",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8AB7404063EC4DBCFD4598215992DC3F8EC853D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X059956483753947536204E89BFAD909E1A434CC6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XECA41281C24451168A37211F0BC2B8645AF45092",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XADE00C28244D5CE17D72E40330B1C318CD12B7C3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA749DE6C28262B7FFBC5DE27DC845DD7ECD2B358",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4CC19356F2D37338B9802AA8E8FC58B0373296E7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF4B385849F2E817E92BFFBFB9AEB48F950FF4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9D1D4DE9CD93203147FAC3BC0262A78E3A0E96BB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFF56CC6B1E6DED347AA0B7676C85AB0B3D08B0FA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFA35E2250E376C23955247383DC32C79082E7FCC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1AECAB957BAD4C6E36DD29C3D3BB470C4C29768A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF0990170A60DA34FFCFFA14EAD4A3DE27D0F4CE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X06450DEE7FD2FB8E39061434BABCFC05599A6FB8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X21AC3BB914F90A2BB1A16088E673A9FDDA641434",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X12BB890508C125661E03B09EC06E404BC9289040",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X12B4356C65340FB02CDFF01293F95FEBB1512F3B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF3B9569F82B18AEF890DE263B84189BD33EBE452",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7BC75E291E656E8658D66BE1CC8154A3769A35DD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4507CEF57C46789EF8D1A19EA45F4216BAE2B528",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB7E548C4F133ADBB910914D7529D5CB00C2E9051",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X915424AC489433130D92B04096F3B96C82E92A9D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X74DA4C5F8C254DD4FB39F9804C0924F52A808318",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE60E9BD04CCC0A394F1FDF29874E35A773CB07F4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4BE63A9B26EE89B9A3A13FD0AA1D0B2427C135F8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA57AC35CE91EE92CAEFAA8DC04140C8E232C2E50",
+      "TransferFee": 3.99
+    },
+    {
+      "ContractAddress": "0XA66B448F97CBF58D12F00711C02BAC2D9EAC6F7F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B9F031D718DDED0D681C20CB754F97B3BB81B78",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0FD10B9899882A6F2FCB5C371E17E70FDEE00C38",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCAABCAA4CA42E1D86DE1A201C818639DEF0BA7A7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X72E4F9F808C49A2A61DE9C5896298920DC4EEEA9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5F78F4BFCB2B43BC174FE16A69A13945CEFA2978",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X04C17B9D3B29A78F7BD062A57CF44FC633E71F85",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA11D00C5F74255F56A5E366F4F77F5A186D7F55",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5043F271095350C5AC7DB2384A0D9337E27C1055",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4DEC3139F4A6C638E26452D32181FE87A7530805",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCD1679F117E81DEFC4F0009311DDC23FC1AE4A5E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6C936D4AE98E6D2172DB18C16C4B601C99918EE6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3632DEA96A953C11DAC2F00B4A05A32CD1063FAE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E79B51959CF968D87826592F46F819F92466615",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X944824290CC12F31AE18EF51216A223BA4063092",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8802269D1283CDB2A5A329649E5CB4CDCEE91AB6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA4A2E2CA3FBFE21AED83471D28B6F65A233C6E00",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X965F527D9159DCE6288A2219DB51FC6EEF120DD1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X90869B3A42E399951BD5F5FF278B8CC5EE1DC0FE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF203CA1769CA8E9E8FE1DA9D147DB68B6C919817",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAAEE1A9723AADB7AFA2810263653A34BA2C21C7A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X557B933A7C2C45672B610F8954A3DEB39A51A8CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC27A719105A987B4C34116223CAE8BD8F4B5DEF4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X80D55C03180349FFF4A229102F62328220A96444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7D8DAFF6D70CEAD12C6F077048552CF89130A2B1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFAD8CB754230DBFD249DB0E8ECCB5142DD675A0D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X74836CC0E821A6BE18E407E6388E430B689C66E9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X68BBED6A47194EFF1CF514B50EA91895597FC91E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1D0E215A23D7030842FC67CE582A6AFA3CCAB83",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X236501327E701692A281934230AF0B6BE8DF3353",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0733618AB62EEEC815F2D1739B7A50BF9E74D8A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBBAEC992FC2D637151DAF40451F160BF85F3C8C1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8613D52D74A48883A51BADF8B25AB066714087DA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F7DC5D02CC1E1F5EE47854D534D332A1081CCC8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0510101EC6C49D24ED911F0011E22A0D697EE776",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X799A290F9CC4085A0CE5B42B5F2C30193A7A872B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD74B782E05AA25C50E7330AF541D46E18F36661C",
+      "TransferFee": 0.99
+    },
+    {
+      "ContractAddress": "0XBF7C81FFF98BBE61B40ED186E4AFD6DDD01337FE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC11158C5DA9DB1D553ED28F0C2BA1CBEDD42CFCB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X19062190B1925B5B6689D7073FDFC8C2976EF8CB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9813037EE2218799597D83D4A5B6F3B6778218D9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAAAEBE6FE48E54F431B0C390CFAF0B017D09D42D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD13C7342E1EF687C5AD21B27C2B65D772CAB5C8C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8850D2C68C632E3B258E612ABAA8FADA7E6958E5",
+      "TransferFee": 4.99
+    },
+    {
+      "ContractAddress": "0X476C5E26A75BD202A9683FFD34359C0CC15BE0FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XECEB87CF00DCBF2D4E2880223743FF087A995AD9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF94E7D0710709388BCE3161C32B4EEA56D3F91CC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2222227E22102FE3322098E4CBFE18CFEBD57C95",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD8C0B13B551718B808FC97EAD59499D5EF862775",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB056C38F6B7DC4064367403E26424CD2C60655E1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE3086852A4B125803C815A158249AE468A3254CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X21BFBDA47A0B4B5B1248C767EE49F7CAA9B23697",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B66CCD1340C479B07B390D326EADCBB84E726BA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X04FA0D235C4ABF4BCF4787AF4CF447DE572EF828",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD38BB40815D2B0C2D2C866E0C72C5728FFC76DD9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X52B492A33E447CDB854C7FC19F1E57E8BFA1777D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X19DA1F6A5C2AEC9315BF16D14CE7F7163082BF82",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X617CAB4AAAE1F8DFB3EE138698330776A1E1B324",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0954906DA0BF32D5479E25F46056D22F08464CAB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4AE149FD6059AF772B962EFAC6BF0236872D6940",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9CB41FD9DC6891BAE8187029461BFAADF6CC0C69",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X525A8F6F3BA4752868CDE25164382BFBAE3990E1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4F1AAC70B303818DDD0823570AF3BB46681D9BD8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9D56C29E820DD13B0580B185D0E0DC301D27581D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA5E66FB16944DA22A62EA4FD70AD02008744460",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7D5121505149065B562C789A0145ED750E6E8CDD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D67D1BEC77E562A73A65EEF5ED92AC46744671C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF3C7CECF8CBC3066F9A87B310CEBE198D00479AC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X86BB94DDD16EFC8BC58E6B056E8DF71D9E666429",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0B010000B7624EB9B3DFBC279673C76E9D29D5F7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6243558A24CC6116ABE751F27E6D7EDE50ABFC76",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1121ACC14C63F3C872BFCA497D10926A6098AAC5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9469D013805BFFB7D3DEBE5E7839237E535EC483",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X20D6015660B3FE52E6690A889B5C51F69902CE0E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X59E69094398AFBEA632F8BD63033BDD2443A3BE1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0578D8A44DB98B23BF096A382E016E29A5CE0FFE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA849EAAE994FB86AFA73382E9BD88C2B6B18DC71",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XADF7335DA0E77339F2D69841F79B0AA6C14D187D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X08D967BB0134F2D07F7CFB6E246680C53927DD30",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X595E21B20E78674F8A64C1566A20B2B316BC3511",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB2492E97A68A6E4B9E9A11B99F6C42E5ACCD38C7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F0DF6CB17EE5E883EDDFEF9153FC6036BDB4E37",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9695E0114E12C0D3A3636FAB5A18E6B737529023",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X37E2AE82C454A6888E4BBB3E21A6607034832B4F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X38E382F74DFB84608F3C1F10187F6BEF5951DE93",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0262E9374E95B9667B78136C3897CB4E4EF7F0C2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X24569D33653C404F90AF10A2B98D6E0030D3D267",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFABA6F8E4A5E8AB82F62FE7C39859FA577269BE3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X52DA44B5E584F730005DAC8D2D2ACBDEE44D4BA3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X60F67E1015B3F069DD4358A78C38F83FE3A667A9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6A72D3A87F97A0FEE2C2EE4233BDAEBC32813D7A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2C3A8EE94DDD97244A93BC48298F97D2C412F7DB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6ADB2E268DE2AA1ABF6578E4A8119B960E02928F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X49F2145D6366099E13B10FBF80646C0F377EE7F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77777FEDDDDFFC19FF86DB637967013E6C6A116C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF970706063B7853877F39515C96932D49D5AC9CD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3FFEEA07A27FAB7AD1DF5297FA75E77A43CB5790",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B0B3A982B4634AC68DD83A4DBF02311CE324181",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9025DAA1FE2D27700187E0EAC670818945F94C2E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X728F30FA2F100742C7949D1961804FA8E0B1387D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEC67005C4E498EC7F55E092BD1D35CBC47C91892",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0202BE363B8A4820F3F4DE7FAF5224FF05943AB1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X252B9F56359901A0BDE52D0675B1F1130D86F471",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD41FDB03BA84762DD66A0AF1A6C8540FF1BA5DFB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X84575B87395C970F1F48E87D87A8DB36ED653716",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC4C2614E694CF534D407EE49F8E44D125E4681C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X59F4F336BF3D0C49DBFBA4A74EBD2A6ACE40539A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X99AA29AC023057951781DC5D1784E9A4C362CE23",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7A65CB87F596CAF31A4932F074C59C0592BE77D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF418588522D5DD018B425E472991E52EBBEEEEEE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4D7FA587EC8E50BD0E9CD837CB4DA796F47218A1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB90B2A35C65DBC466B04240097CA756AD2005295",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X95CEF13441BE50D20CA4558CC0A27B601AC544E5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C1BED5B9A0928467C9B1341DA1D7BD5E10B6549",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF91B70017EABDE82C9671E30E5502D312EA6EB2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X84CA8BC7997272C7CFB4D0CD3D55CD942B3C9419",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC770EEFAD204B5180DF6A14EE197D99D808EE52D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA31B1767E09F842ECFD4BC471FE44F830E3891AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X47A1EB0B825B73E6A14807BEAECAFEF199D5477C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X22AF33FE49FD1FA80C7149773DDE5890D3C76F3B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X28561B8A2360F463011C16B6CC0B0CBEF8DBBCAD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE355DE6A6043B0580FF5A26B46051A4809B12793",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0391D2021F89DC339F60FFF84546EA23E337750F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF31698DDAD0D11160FE85C500397A470CD3D492E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0000000000C5DC95539589FBD24BE07C6C14ECA4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7C84E62859D0715EB77D1B1C4154ECD6ABB21BEC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB7109DF1A93F8FE2B8162C6207C9B846C1C68090",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2596825A84888E8F24B747DF29E11B5DD03C81D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X712BD4BEB54C6B958267D9DB0259ABDBB0BFF606",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X41D5D79431A913C4AE7D69A668ECDFE5FF9DFB68",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9A26F5433671751C3276A065F57E5A02D2817973",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X28D38DF637DB75533BD3F71426F3410A82041544",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1CEB5CB57C4D4E2B2433641B95DD330A33185A44",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F1C90AEB2FD13EA972F0A71E35C0753848E3DB0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0305F515FA978CF87226CF8A9776D25BCFB2CC0B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA2B4C0AF19CC16A6CFACCE81F192B024D625817D",
+      "TransferFee": 1.99
+    },
+    {
+      "ContractAddress": "0X937A1CFAF0A3D9F5DC4D0927F72EE5E3E5F82A00",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X243C9BE13FABA09F945CCC565547293337DA0AD7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X953783617A71A888F8B04F397F2C9E1A7C37AF7E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23FE903BE385832FD7BB82BF1FEE93F696278888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X81F8F0BB1CB2A06649E51913A151F0E7EF6FA321",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC575BD129848CE06A460A19466C30E1D0328F52C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDC0D0EB492E4902C5991C5CB2038FB06409E7F99",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X55AD16BD573B3365F43A9DAEB0CC66A73821B4A5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X031B8D752D73D7FE9678ACEF26E818280D0646B4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB26C4B3CA601136DAF98593FEAEFF9E0CA702A8D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8BFAC1B375BF2894D6F12FB2EB48B1C1A7916789",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7B10D50B5885BE4C7985A88408265C109BD1EEC8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X679D5B2D94F454C950D683D159B87AA8EAE37C9E",
+      "TransferFee": 11.99
+    },
+    {
+      "ContractAddress": "0X61C6EBF443AD613C9648762585B3CFD3BA1F3FA8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB1A03EDA10342529BBF8EB700A06C60441FEF25D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC50673EDB3A7B94E8CAD8A7D4E0CD68864E33EDF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8806926AB68EB5A7B909DCAF6FDBE5D93271D6E2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3C3A81E81DC49A522A592E7622A7E711C06BF354",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA987C655EBC38C801DB64A8608BC1AA56CD9A31",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7300B37DFDFAB110D83290A29DFB31B1740219FE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X04756126F044634C9A0F0E985E60C88A51ACC206",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8E6CD950AD6BA651F6DD608DC70E5886B1AA6B24",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X11CF6BF6D87CB0EB9C294FD6CBFEC91EE3A1A7D0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA3D4BEE77B05D4A0C943877558CE21A763C4FA29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA3D4BEE77B05D4A0C943877558CE21A763C4FA29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5B73A93B4E5E4F1FD27D8B3F8C97D69908B5E284",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8390A1DA07E376EF7ADD4BE859BA74FB83AA02D5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF72AE3E0DA743033ABD7A407557D684C1AE66AED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB5C6815CA3AC72CE9F5006869AE67F18BF77006",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE76C6C83AF64E4C60245D8C7DE953DF673A7A33D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8EBF4849F1FA4FAF0DFF2106A173D3A6CB2EB3A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC19539EB93444523EC8F1432624924D2E6226546",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3C8CD0DB9A01EFA063A7760267B822A129BC7DCA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7E52A123ED6DB6AC872A875552935FBBD2544C86",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCE403DBDFF00853860C68739611C64F0BD1C9AFF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC328A59E7321747AEBBC49FD28D1B32C1AF8D3B2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD6203889C22D9FE5E938A9200F50FDFFE9DD8E02",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X644192291CC835A93D6330B24EA5F5FEDD0EEF9E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1BBF25E71EC48B84D773809B4BA55B6F4BE946FB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9DFAD1B7102D46B1B197B90095B5C4E9F5845BBA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7636D8722FDF7CD34232A915E48E96AA3EB386BF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X955D5C14C8D4944DA1EA7836BD44D54A8EC35BA1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0203D275D2A65030889AF45ED91D472BE3948B92",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAFF9084F2374585879E8B434C399E29E80CCE635",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0001A500A6B18995B03F44BB040A5FFC28E45CB0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAC51066D7BEC65DC4589368DA368B212745D63E8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCAAE2A2F939F51D97CDFA9A86E79E3F085B799F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA49FA5E8106E2D6D6A69E78DF9B6A20AAB9C4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X61DBBBB552DC893AB3AAD09F289F811E67CEF285",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X42069026EAC8EEE0FD9B5F7ADFA4F6E6D69A2B39",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X73D7C860998CA3C01CE8C808F5577D94D545D1B4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB4357054C3DA8D46ED642383F03139AC7F090343",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X25931894A86D47441213199621F1F2994E1C39AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X55CD6469F597452B5A7536E2CD98FDE4C1247EE4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBB0E17EF65F82AB018D8EDD776E8DD940327B28B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBB0E17EF65F82AB018D8EDD776E8DD940327B28B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9AAB071B4129B083B01CB5A0CB513CE7ECA26FA5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF6E932CA12AFA26665DC4DDE7E27BE02A7C02E50",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X68749665FF8D2D112FA859AA293F07A622782F38",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE7AB96520DE3A18E5E111B5EAAB095312D7FE84",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE7AB96520DE3A18E5E111B5EAAB095312D7FE84",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE7AB96520DE3A18E5E111B5EAAB095312D7FE84",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9EC02756A559700D8D9E79ECE56809F7BCC5DC27",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X02537463E57A44F861EE861BA4F590C413F984A6",
+      "TransferFee": 0.99
+    },
+    {
+      "ContractAddress": "0X2AA89A0113BCBBCDC5812C6DF794E2D9650FC1AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1C9922314ED1415C95B9FD453C3818FD41867D0B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE30DA39C46104798BB5AA3FE8B9E0E1F348163F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X89A8C847F41C0DFA6C8B88638BACCA8A0B777DA7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE30DA39C46104798BB5AA3FE8B9E0E1F348163F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE30DA39C46104798BB5AA3FE8B9E0E1F348163F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA45F5EB48CECD034751651AEEDA6271BD5DF8888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X957C7FA189A408E78543113412F6AE1A9B4022C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9573C88AE3E37508F87649F87C4DD5373C9F31E0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDC9DF5B6FB6A13AE1C9FF8B749CD5C95FBB060E1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X41E5560054824EA6B0732E656E3AD64E20E94E45",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XED35AF169AF46A02EE13B9D79EB57D6D68C1749E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XED35AF169AF46A02EE13B9D79EB57D6D68C1749E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B3595068778DD592E39A122F4F5A5CF09C90FE2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1BBE973BEF3A977FC51CBED703E8FFDEFE001FED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9F6C24232F1BBA6EF47BCB81B9B9434ACDB94444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAC1BD2486AAF3B5C0FC3FD868558B082A531B2B4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4DC26FC5854E7648A064A4ABD590BBE71724C277",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0F63A424A4439CBE457D80E4F4B51AD25B2C56C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0F63A424A4439CBE457D80E4F4B51AD25B2C56C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X868FCED65EDBF0056C4163515DD840E9F287A4C3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X431AD2FF6A9C365805EBAD47EE021148D6F7DBE0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X80122C6A83C8202EA365233363D3F4837D13E888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X52A8845DF664D76C69D2EEA607CD793565AF42B8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X52A8845DF664D76C69D2EEA607CD793565AF42B8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFA1C09FC8B491B6A4D3FF53A10CAD29381B3F949",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFA1C09FC8B491B6A4D3FF53A10CAD29381B3F949",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF2C88757F8D03634671208935974B60A2A28BDB3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X932FB7F52ADBC34FF81B4342B8C036B7B8AC4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC98D64DA73A6616C42117B582E832812E7B8D57F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X58B9CB810A68A7F3E1E4F8CB45D1B9B3C79705E8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X22B4FA9A13A0D303AD258EE6D62A6AC60364B0C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEF22CB48B8483DF6152E1423B19DF5553BBD818B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XABD4C63D2616A5201454168269031355F4764337",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2A3BFF78B79A009976EEA096A51A948A3DC00E34",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2A3BFF78B79A009976EEA096A51A948A3DC00E34",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2A3BFF78B79A009976EEA096A51A948A3DC00E34",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X419D0D8BDD9AF5E606AE2232ED285AFF190E711B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X419D0D8BDD9AF5E606AE2232ED285AFF190E711B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA41DDF06B7FFD89D1267B5A93BFEF2424EB2003",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1258D60B224C0C5CD888D37BBF31AA5FCFB7E870",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1AE369A6AB222AFF166325B7B87EB9AF06C86E57",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC07E1300DC138601FA6B0B59F8D0FA477E690589",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBBA39FD2935D5769116CE38D46A71BDE9CF03099",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0A638F07ACC6969ABF392BB009F216D22ADEA36D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X26E550AC11B26F78A04489D5F20F24E3559F7DD9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X26E550AC11B26F78A04489D5F20F24E3559F7DD9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF819D9CB1C2A819FD991781A822DE3CA8607C3C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF819D9CB1C2A819FD991781A822DE3CA8607C3C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6894CDE390A3F51155EA41ED24A33A4827D3063D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3157874A7508FCF972379D24590C6806522B784F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA4B68D48D7BC6F04420E8077E6F74BDEF809DEA3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X186EF81FD8E77EEC8BFFC3039E7EC41D5FC0B457",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X186EF81FD8E77EEC8BFFC3039E7EC41D5FC0B457",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X59537849F2A119EC698C7AA6C6DAADC40C398A25",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X009BA50496D2B0936C5BDF299DB2F7E0D6E10469",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6EC90334D89DBDC89E08A133271BE3D104128EDB",
+      "TransferFee": 1.99
+    },
+    {
+      "ContractAddress": "0XA524B11473B7CE7EB1DC883A585E64471A734444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X85E90A5430AF45776548ADB82EE4CD9E33B08077",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6FA9C0EE8A1F237466BB9CAC8466BFA2AA63A978",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFEAC2EAE96899709A43E252B6B92971D32F9C0F9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFEAC2EAE96899709A43E252B6B92971D32F9C0F9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X61FAC5F038515572D6F42D4BCB6B581642753D50",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF57E7E7C23978C3CAEC3C3548E3D615C346E79FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X57B96D4AF698605563A4653D882635DA59BF11AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF57E7E7C23978C3CAEC3C3548E3D615C346E79FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF57E7E7C23978C3CAEC3C3548E3D615C346E79FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X529C79F6918665EBE250F32EEEAA1D410A0798C6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9AAAE745CF2830FB8DDC6248B17436DC3A5E701C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC9D23ED2ADB0F551369946BD377F8644CE1CA5C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC9D23ED2ADB0F551369946BD377F8644CE1CA5C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X58DB197E91BC8CF1587F75850683E4BD0730E6BF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9CE84F6A69986A83D92C324DF10BC8E64771030F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEF3A930E1FFFFACD2FC13434AC81BD278B0ECC8D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0C1DC73159E30C4B06170F2593D3118968A0DCA5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB850CAC12AB85D4400DB61AC78DC5FC2418B6868",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X11DC28D01984079B7EFE7763B533E6ED9E3722B9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1FAA113CBE53436DF28FF0AEE54275C13B40975",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1FAA113CBE53436DF28FF0AEE54275C13B40975",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC43C6BFEDA065FE2C4C11765BF838789BD0BB5DE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3489256FEBDB1DC930DC3743617AD387CD6D3568",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XACD2C239012D17BEB128B0944D49015104113650",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X51363F073B1E4920FDA7AA9E9D84BA97EDE1560E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X774EAF7A53471628768DC679DA945847D34B9A55",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X997A58129890BBDA032231A52ED1DDC845FC18E1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X32353A6C91143BFD6C7D363B546E62A9A2489A20",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X95AF4AF910C28E8ECE4512BFE46F1F33687424CE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X95AF4AF910C28E8ECE4512BFE46F1F33687424CE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X11E969E9B3F89CB16D686A03CD8508C9FC0361AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB5761F36FDFE2892F1B54BC8EE8BABB2A1B698D3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3B4DE3C7855C03BB9F50EA252CD2C9FA1125AB07",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3496B523E5C00A4B4150D6721320CDDB234C3079",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCE7C3B5E058C196A0EAAA21F8E4BF8C2C07C2935",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1832F7F4E534AE557F9B5AB76DE54B1873E498B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA1832F7F4E534AE557F9B5AB76DE54B1873E498B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X926ECC7687FCFB296E97A2B4501F41A6F5F8C214",
+      "TransferFee": 0.04
+    },
+    {
+      "ContractAddress": "0X1F34C87DED863FE3A3CD76FAC8ADA9608137C8C3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X14C3ABF95CB9C93A8B82C1CDCB76D72CB87B2D4C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6D5AD1592ED9D6D1DF9B93C793AB759573ED6714",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC52C326331E9CE41F04484D3B5E5648158028804",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X503FA24B7972677F00C4618E5FBE237780C1DF53",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X68A47FE1CF42EBA4A030A10CD4D6A1031CA3CA0A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X68A47FE1CF42EBA4A030A10CD4D6A1031CA3CA0A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3AEE7602B612DE36088F3FFED8C8F10E86EBF2BF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4E107A0000DB66F0E9FD2039288BF811DD1F9C74",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8FFF93E810A2EDAAFC326EDEE51071DA9D398E83",
+      "TransferFee": 11.99
+    },
+    {
+      "ContractAddress": "0X88909D489678DD17AA6D9609F89B0419BF78FD9A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X88909D489678DD17AA6D9609F89B0419BF78FD9A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD82544BF0DFE8385EF8FA34D67E6E4940CC63E16",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF3DCBC6D72A4E1892F7917B7C43B74131DF8480E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2D8EA194902BC55431420BD26BE92B0782DCE91D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0B3E328455C4059EEB9E3F84B5543F74E24E7E1B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC729777D0470F30612B1564FD96E8DD26F5814E3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44709A920FCCF795FBC57BAA433CC3DD53C44DBE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F1CBED8EFA0E012ADBCCB1638D0AB0147D5AC00",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3F80B1C54AE920BE41A77F8B902259D48CF24CCF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF6BB5389C92BDDA8A3747DDB454CB7A64626C63",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X76A0E27618462BDAC7A29104BDCFFF4E6BFCEA2D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9E46A38F5DAABE8683E10793B06749EEF7D733D1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA444EC96EE01BB219A44B285DE47BF33C3447AD5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF4C8E32EADEC4BFE97E0F595ADD0F4450A863A11",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8B9B95292F890DF47FFF5AC9CBE93D5FC242BD51",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF6B1117EC07684D3958CAD8BEB1B302BFD21103F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD6B48CCF41A62EB3891E58D0F006B19B01D50CCA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCB1592591996765EC0EFC1F92599A19767EE5FFA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X731814E491571A2E9EE3C5B1F7F3B962EE8F4870",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA5ED44733953D79717F6269357C77718C8BA5ED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X90685E300A4C4532EFCEFE91202DFE1DFD572F47",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D3CBED3F69EE050668ADF3D9EA57241CBA33A2B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCA73ED1815E5915489570014E024B7EBE65DE679",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9818B6C09F5ECC843060927E8587C427C7C93583",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3330BFB7332CA23CD071631837DC289B09C33333",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA992FFB0C9B753307B9704079C61DB4E405DEFFD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1ABAEA1F7C830BD89ACC67EC4AF516284B1BC33C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X509A38B7A1CC0DCD83AA9D06214663D9EC7C7F4A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0409633A72D846FC5BBE2F98D88564D35987904D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0F94AC5462997D2BC57287AC3A3AE4C31345D66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X93749E69560EFE1AD6661903E47DF538492C50A4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X83E6F1E41CDD28EACEB20CB649155049FAC3D5AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BDCCE4A559076E37755A78CE0C06214E59E4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XED66EC1ACB7DBD0C01CCCFF33E3FF1F423057C21",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X80C62FE4487E1351B47BA49809EBD60ED085BF52",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X208BF3E7DA9639F1EAEFA2DE78C23396B0682025",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9EAEBD7E73D97E78C77FAB743E6FFA1B550E224C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7613C48E0CD50E42DD9BF0F6C235063145F6F8DC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8FAC8031E079F409135766C7D5DE29CF22EF897C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBE6AD1EB9876CF3D3F9B85FEECFB400298E80143",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBE6AD1EB9876CF3D3F9B85FEECFB400298E80143",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X135A5F2B1C49BD07954561E048C38CC2EF19B6CB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA5B000D453143B357DBA63F4EE83F2F6FDA832B8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA0EF786BF476FE0810408CABA05E536AC800FF86",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X808507121B80C02388FAD14726482E061B8DA827",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5B649C07E7BA0A1C529DEAABED0B47699919B4A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X998305EFDC264B9674178899FFFBB44A47134A76",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8EA5219A16C2DBF1D6335A6AA0C6BD45C50347C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6055DC6FF1077EEBE5E6D2BA1A1F53D7EF8430DE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0CD4CACDDCBF4F36E845407CE53E87717B6601D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X926759A8EAECFADB5D8BDC7A9C7B193C5085F507",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE3225E11CAB122F1A126A28997788E5230838AB9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X166C52D0633484C9AC0203DCBDC97BC32AAEF720",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBEF26BD568E421D6708CCA55AD6E35F8BFA0C406",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD5369A3CAC0F4448A9A96BB98AF9C887C92FC37B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF3C8BE2E2C42331DA80EF210E9B1B307C03D36A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X42FE1937E1DB4F11509E9F7FDD97048BD8D04444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5DC60C4D5E75D22588FA17FFEB90A63E535EFCE0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X92AA03137385F18539301349DCFC9EBC923FFB10",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X799EBFABE77A6E34311EEEE9825190B9ECE32824",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4BB3205BF648B7F59EF90DEE0F1B62F6116BC7CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF0F9D895ACA5C8678F706FB8216FA22957685A13",
+      "TransferFee": 0.39
+    },
+    {
+      "ContractAddress": "0X562E362876C8AEE4744FC2C6AAC8394C312D215D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCAB84BC21F9092167FCFE0EA60F5CE053AB39A1E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6F40D4A6237C257FFF2DB00FA0510DEEECD303EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC0041EF357B183448B235A8EA73CE4E4EC8C265F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X41545F8B9472D758BB669ED8EAEEECD7A9C4EC29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA4C3497B57C8B6D510F3707A1E9694FD791F45FB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA05CA5303D75F14E298FB8AEFF51FD2F2105803",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0A8D6C86E1BCE73FE4D0BD531E1A567306836EA5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X000AE314E2A2172A039B26378814C252734F556A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1A3496C18D558BD9C6C8F609E1B129F67AB08163",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE747E54783BA3F77A8E5251A3CBA19EBE9C0E197",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5C4625AC040486CE7A9054924B8CD3E4BA8480A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFD418E42783382E86AE91E445406600BA144D162",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8F331DFA811132C43C308757CD802CA982B7211",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XADF7C35560035944E805D98FF17D58CDE2449389",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF10117B30C7A5FC7C77B611BFC2555610DD4B3A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X89AF13A10B32F1B2F8D1588F93027F69B6F4E27E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD9FCD98C322942075A5C3860693E9F4F03AAE07B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7D03759E5B41E36899833CB2E008455D69A24444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5DE8AB7E27F6E7A1FFF3E5B337584AA43961BEEF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCDF7028CEAB81FA0C6971208E83FA7872994BEE5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DDC52C4DE30E94BE3A6A0A2B259B2850F421989",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DDC52C4DE30E94BE3A6A0A2B259B2850F421989",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DDC52C4DE30E94BE3A6A0A2B259B2850F421989",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D8775F648430679A709E98D2B0CB6250D2887EF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA3335588D9403515223F109EDC4EB7269A9AB5D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X70EDF1C215D0CE69E7F16FD4E6276BA0D99D4DE7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB0AC2B5A73DA0E67A8E5489BA922B3F8D582E058",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X45804880DE22913DAFE09F4980848ECE6ECBAF78",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E5970DBD6FC7EB1F29C6D2EDF2BC4C36124C0C1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD5DF4D260D7A0145F655BCBF3B398076F21016C7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5845684B49AEF79A5C0F887F50401C247DCA7AC6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X08C32B0726C5684024EA6E141C50ADE9690BBDCC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC011A73EE8576FB46F5E1C5751CA3B9FE0AF2A6F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C8D2A7D8D9CF26F5EE1BBFC0BA56E93F4A4A7AC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C8D2A7D8D9CF26F5EE1BBFC0BA56E93F4A4A7AC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD5EAAAC47BD1993D661BC087E15DFB079A7F3C19",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC944E90C64B2C07662A292BE6244BDF05CDA44A7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5CC81EA325E9FF9D496F4997750B8F6667F1C63C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD13CFD3133239A3C73A9E535A5C4DADEE36B395C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X908DDB096BFB3ACB19E2280AAD858186EA4935C4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5EE3188A3F8ADEE1D736EDD4AE85000105C88F66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5283D291DBCF85356A21BA090E6DB59121208B44",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE6E307C3FE9E922E5674DBD7F830ED49C014C6B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBE0ED4138121ECFC5C0E56B40517DA27E6C5226B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X88A9A52F944315D5B4E917B9689E65445C401E83",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAC45475ABE6F9516E233A824AA013933B61BBB5C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9CFAE8067322394E34E6B734C4A3F72ACC4A7FE5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D4629FF6D6CA422178DC66A21EEA0DFB182E72C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23894DC9DA6C94ECB439911CAF7D337746575A72",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD795EB12034C2B77D787A22292C26FAB5F5C70AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9E57E83AD79AC5312BA82940BA037ED30600E167",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBC45647EA894030A4E9801EC03479739FA2485F0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X02E75D28A8AA2A0033B8CF866FCF0BB0E1EE4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA5346F91A767B89A0363A4309C8E6C5ADC0C4A59",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB7C0007AB75350C582D5EAB1862B872B5CF53F0C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5CF04716BA20127F1E2297ADDCF4B5035000C9EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF5CFBC74057C610C8EF151A439252680AC68C6DC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X946FB08103B400D1C79E07ACCCDEF5CFD26CD374",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X58D97B57BB95320F9A05DC918AEF65434969C2B2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6EA8211A1E47DBD8B55C487C0B906EBC57B94444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X532F27101965DD16442E59D40670FAF5EBB142E4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7AAFD31A321D3627B30A8E2171264B56852187FE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD3F68C6E8AEE820569D58ADF8D85D94489315192",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1633B7157E7638C4D6593436111BF125EE74703F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCC6F1E1B87CFCBE9221808D2D85C501AAB0B5192",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC1353D3EE02FDBD4F65F92EEE543CFD709049CB1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA2CD3D43C775978A96BDBF12D733D5A1ED94FB18",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0A441D23CEDB44822DFC8562E4D8D39C6B7F946",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF39E4B21C84E737DF08E2C3B32541D856F508E48",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9558A9254890B2A8B057A789F413631B9084F4A3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFCEB31A79F71AC9CBDCF853519C1B12D379EDC46",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9C7BEBA8F6EF6643ABD725E45A4E8387EF260649",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5C85D6C6825AB4032337F11EE92A72DF936B46F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8F693CA8D21B157107184D29D398A8D082B38B76",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X32B77729CD87F1EF2BEA4C650C16F89F08472C69",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6921B130D297CC43754AFBA22E5EAC0FBF8DB75B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8FC17671D853341D9E8B001F5FC3C892D09CB53A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA227CC36938F0C9E09CE0E64DFAB226CAD739447",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD29DA236DD4AAC627346E1BBA06A619E8C22D7C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC5D27F27F08D1FD1E3EBBAA50B3442E6C0D50439",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB33FF54B9F7242EF1593D2C9BCD8F9DF46C77935",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB33FF54B9F7242EF1593D2C9BCD8F9DF46C77935",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X768BE13E1680B5EBE0024C42C896E3DB59EC0149",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X853A7C99227499DBA9DB8C3A02AA691AFDEBF841",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X418E5662ABD0DB9F67B43B0976B7B68B0A974978",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X238D72E179A581C98DC1996417A49818C7E509DC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7B4328C127B85369D9F82CA0503B000D09CF9180",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X464EBE77C293E473B48CFE96DDCF88FCF7BFDAC0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5C697FEE285B513711A816018DBB34DC0CFC4875",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X00000000A22C618FD6B4D7E9A335C4B96B189A38",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AEF5BBA19E6A1644805BD4F5C93C8557B87C62C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X374C5FB7979D5FDBAAD2D95409E235E5CBDFD43C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X88800092FF476844F74DC2FC427974BBEE2794AE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6F88DBED8F178F71F6A0C27DF10D4F0B8DDF4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1B379A79C91A540B2BCD612B4D713F31DE1B80CC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0FD7A301B51D0A83FCAF6718628174D527B373B6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE2AD0BF751834F2FBDC62A41014F84D67CA1DE2A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4F9FD6BE4A90F2620860D680C0D4D5FB53D1A825",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X24A3D725C37A8D1A66EB87F0E5D07FE67C120035",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8584516B7D2C156C763C874D6813E06B57E4CB5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA6422E3E219EE6D4C1B18895275FE43556FD50ED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF67815CCE72E682EB4429ECA46843BED81CA739",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD33526068D116CE69F19A9EE46F0BD304F21A51F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD33526068D116CE69F19A9EE46F0BD304F21A51F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBDEAE1CA48894A1759A8374D63925F21F2EE2639",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA260E12D2B924CB899AE80BB58123AC3FEE1E2F0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE914ED9F96853AB95DF19481BD14F0FD9DC2249",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F735F84B07CC20E9AC471C291A87B5A2428D518",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5DBDE81FCE337FF4BCAAEE4CA3466C00AECAE274",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5DBDE81FCE337FF4BCAAEE4CA3466C00AECAE274",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X07F9702CE093DB82DFDC92C2C6E578D6EA8D5E22",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X22514FFB0D7232A56F0C24090E7B68F179FAA940",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "F5CFBC74057C610C8EF151A439252680AC68C6DC.FACTORY.BRIDGE.NEAR",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23CCAB1DE32E06A6235A7997C266F86440C2CBE6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9C8B5CA345247396BDFAC0395638CA9045C6586E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9F589E3EABE42EBC94A44727B3F3531C0C877809",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9F589E3EABE42EBC94A44727B3F3531C0C877809",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BF62CA91E397B5A7D1D6BCE97D9092065D7A510",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BF62CA91E397B5A7D1D6BCE97D9092065D7A510",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X825459139C897D769339F295E962396C4F9E4A4D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X75D8BB7FBD4782A134211DC350BA5C715197B81D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7420B4B9A0110CDC71FB720908340C03F9BC03EC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBDA011D7F8EC00F66C1923B049B94C67D148D8B2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA3CFB853339B77F385B994799B015CB04B208FE6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X43DFC4159D86F3A37A5A4B3D4580B888AD7D4DDD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA2120B9E674D3FC3875F415A7DF52E382F141225",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC71B5F631354BE6853EFE9C3AB6B9590F8302E81",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDBDB4D16EDA451D0503B854CF79D55697F90C8DF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7F792DB54B0E580CDC755178443F0430CF799ACA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF9FF95468CB9A0CD57B8542BBC4C148E290FF465",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X72FDC31F4A9A1EDF6B6132D3C1754F1CDCF5D9B1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9123400446A56176EB1B6BE9EE5CF703E409F492",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF9FF95468CB9A0CD57B8542BBC4C148E290FF465",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X94A8B4EE5CD64C79D0EE816F467EA73009F51AA0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X94A8B4EE5CD64C79D0EE816F467EA73009F51AA0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X940A2DB1B7008B6C776D4FAACA729D6D4A4AA551",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD38B305CAC06990C0887032A02C03D6839F770A8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7A5F5CCD46EBD7AC30615836D988CA3BD57412B3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0DF0587216A4A1BB7D5082FDC491D93D2DD4B413",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X14778860E937F509E651192A90589DE711FB88A9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X738865301A9B7DD80DC3666DD48CF034EC42BDDA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XACFE6019ED1A7DC6F7B508C02D1B04EC88CC21BF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0669538FCDEF9A73CD37938EBA8C79E652BB93AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XABE8E5CABE24CB36DF9540088FD7CE1175B9BC52",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X628A3B2E302C7E896ACC432D2D0DD22B6CB9BC88",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X628A3B2E302C7E896ACC432D2D0DD22B6CB9BC88",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X40B8129B786D766267A7A118CF8C07E31CDB6FDE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5D7909F951436D4E6974D841316057DF3A622962",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAA7A9CA87D3694B5755F213B5D04094B8D0F0A6F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X623CD3A3EDF080057892AAF8D773BBB7A5C9B6E9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB5B838B6CFEEDC2873AB27866079AC55363D37E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB5B838B6CFEEDC2873AB27866079AC55363D37E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X47C454CA6BE2F6DEF6F32B638C80F91C9C3C5949",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4E24C684A90F2C1F9030A5608A6C3A6FA4E854F5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8428A5A99CB452EA50B6EA70B052DAA3DF4934F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3F382DBD960E3A9BBCEAE22651E88158D2791550",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3432B6A60D23CA0DFCA7761B7AB56459D9C964D0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8FCE7206E3043DD360F115AFA956EE31B90B787C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X226BB599A12C826476E3A771454697EA52E9E220",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8DEDF84656FA932157E27C060D8613824E7979E3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE2B1DC2D4A3B4E59FDF0C47B71A7A86391A8B35A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFC1C93A2507975E98B9D0E9260DED61A00152BF1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFF20817765CB7F73D4BDE2E66E067E58D11095C2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X32A7C02E79C4EA1008DD6564B35F131428673C41",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X467719AD09025FCC6CF6F8311755809D45A5E5F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B8285AB433D8F69CB48D5AD62B415ED1A221E4F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0763FDCCF1AE541A5961815C0872A8C5BC6DE4D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X91DA780BC7F4B7CF19ABE90411A2A296EC5FF787",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B0FACA7BA905A86F221CEB5CA404F605E5B3131",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F51BB10119727A7E5EA3538074FB341F56B09AD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X62D0A8458ED7719FDAF978FE5929C6D342B0BFCE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X13E4B8CFFE704D3DE6F19E52B201D92C21EC18BD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AC34C53A04B9AAA0BF047E7291FB4E8A48F2A18",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3DA932456D082CBA208FEB0B096D49B202BF89C8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3DA932456D082CBA208FEB0B096D49B202BF89C8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X103071DA56E7CD95B415320760D6A0DDC4DA1CA5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9521728BF66A867BC65A93ECE4A543D817871EB7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4837B18A6D7AF6159C8665505B90A2ED393255E0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X643C4E15D7D62AD0ABEC4A9BD4B001AA3EF52D66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X643C4E15D7D62AD0ABEC4A9BD4B001AA3EF52D66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAEC945E04BAF28B135FA7C640F624F8D90F1C3A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAEC945E04BAF28B135FA7C640F624F8D90F1C3A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X10633216E7E8281E33C86F02BF8E565A635D9770",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCA14007EFF0DB1F8135F4C25B34DE49AB0D42766",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6DEA81C8171D0BA574754EF6F8B412F2ED88C54D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6DEA81C8171D0BA574754EF6F8B412F2ED88C54D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X539AE81A166E5E80AED211731563E549C411B140",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA3EE21C306A700E682ABCDFE9BAA6A08F3820419",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA3EE21C306A700E682ABCDFE9BAA6A08F3820419",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9F9C8EC3534C3CE16F928381372BFBFBFB9F4D24",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3ECB529752DEC6C6AB08FD83E425497874E21D49",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X18AAA7115705E8BE94BFFEBDE57AF9BFC265B998",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD55C9FB62E176A8EB6968F32958FEFDD0962727E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD55C9FB62E176A8EB6968F32958FEFDD0962727E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB4E017223FD3D639D0264DE4DA1B9E080325CB5E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X03AA6298F1370642642415EDC0DB8B957783E8D6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X03AA6298F1370642642415EDC0DB8B957783E8D6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F81001EF0A83ECCE5CCEBF63EB302C70A39A654",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6261963EBE9FF014AAD10ECC3B0238D4D04E8353",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6261963EBE9FF014AAD10ECC3B0238D4D04E8353",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4F9254C83EB525F9FCF346490BBB3ED28A81C667",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B0F1812E5DF2A09796481FF14017E6005508003",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B0F1812E5DF2A09796481FF14017E6005508003",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFE723495F73714426493384EB5E49AA5B827E1D5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0A6E7BA5042B38349E437EC6DB6214AEC7B35676",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF9CA3FE094212FFA705742D3626A8AB96AABABF8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X66761FA41377003622AEE3C7675FC7B5C1C2FAC5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X08DCB9B5989FB09EF80E85567EC1F49577A70D29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X08DCB9B5989FB09EF80E85567EC1F49577A70D29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3B198E26E473B8FAB2085B37978E36C9DE5D7F68",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2AF5D2AD76741191D15DFE7BF6AC92D4BD912CA3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC20059E0317DE91738D13AF027DFC4A50781B066",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC20059E0317DE91738D13AF027DFC4A50781B066",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC20059E0317DE91738D13AF027DFC4A50781B066",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3D4F0513E8A29669B960F9DBCA61861548A9A760",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3203C9E46CA618C8C1CE5DC67E7E9D75F5DA2377",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1789E0043623282D5DCC7F213D703C6D8BAFBB04",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1789E0043623282D5DCC7F213D703C6D8BAFBB04",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA8C2B8EEC3D368C0253AD3DAE65A5F2BBB89C929",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA67FBF4E6FA4BB78F62533B7264E1B13295FDF3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3B50805453023A91A8BF641E279401A0B23FA6F9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X696F9436B67233384889472CD7CD58A6FB5DF4F1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X20DE22029AB63CF9A7CF5FEB2B737CA1EE4C82A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X20DE22029AB63CF9A7CF5FEB2B737CA1EE4C82A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X56072C95FAA701256059AA122697B133ADED9279",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X56072C95FAA701256059AA122697B133ADED9279",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF4D2888D29D722226FAFA5D9B24F9164C092421E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4BFAA776991E85E5F8B1255461CBBD216CFC714F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3472A5A71965499ACD81997A54BBA8D852C6E53D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3472A5A71965499ACD81997A54BBA8D852C6E53D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X553F4CB7256D8FC038E91D36CB63FA7C13B624AB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X553F4CB7256D8FC038E91D36CB63FA7C13B624AB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB4C6FEDD984BC983B1A758D0875F1EA34F81A6AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB3999F658C0391D94A37F7FF328F3FEC942BCADC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2653891204F463FB2A2F4F412564B19E955166AE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB3999F658C0391D94A37F7FF328F3FEC942BCADC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0921799CB1D702148131024D18FCDE022129DC73",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAF53D56FF99F1322515E54FDDE93FF8B3B7DAFD5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAF53D56FF99F1322515E54FDDE93FF8B3B7DAFD5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE41D2489571D322189246DAFA5EBDE1F4699F498",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X95ED629B028CF6AADD1408BB988C6D1DAABE4767",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X430EF9263E76DAE63C84292C3409D61C598E9682",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4E3FBD56CD56C3E72C1403E103B45DB9DA5B9D2B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB131F4A55907B10D1F0A50D8AB8FA09EC342CD74",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7A58C0BE72BE218B41C608B7FE7C5BB630736C71",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7A58C0BE72BE218B41C608B7FE7C5BB630736C71",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X57E114B691DB790C35207B2E685D4A43181E6061",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0F2D719407FDBEFF09D87557ABB7232601FD9F29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X38E68A37E401F7271568CECAAC63C6B1E19130B4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8457CA5040AD67FDEBBCC8EDCE889A335BC0FBFB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF43EB8DE897FBC7F2502483B2BEF7BB9EA179229",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDBB7A34BF10169D6D2D0D02A6CBB436CF4381BFA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6C5BA91642F10282B576D91922AE6448C9D52F4E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5FAB9761D60419C9EEEBE3915A8FA1ED7E8D2E1B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9E6BE44CC1236EEF7E1F197418592D363BEDCD5A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2E9D63788249371F1DFC918A52F8D799F4A38C94",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X399EF659FDEAD53B3E7F97E9491E727925667945",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA5BDE662C17E2ADFF1075610382B9B691296350",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44108F0223A3C3028F5FE7AEC7F9BB2E66BEF82F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB1F1EE126E9C96231CC3D3FAD7C08B4CF873B1F1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X79A4BAA491FECC00A3B81A281BD97ABCA932F5F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1A5D7E4C3A7F940B240B7357A4BFED30D17F9497",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1A5D7E4C3A7F940B240B7357A4BFED30D17F9497",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCCCCCCCCCC33D538DBC2EE4FEAB0A7A1FF4E8A94",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF640FDF9B3D9E45CBD69FDA91D7E22579C14444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X467BCCD9D29F223BCE8043B84E8C8B282827790F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X467BCCD9D29F223BCE8043B84E8C8B282827790F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X11EEF04C884E24D9B7B4760E7476D06DDF797F36",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X11EEF04C884E24D9B7B4760E7476D06DDF797F36",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE788F80F2756A86AA2F410C651F2AF83639B95B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7659CE147D0E714454073A5DD7003544234B6AA0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC4441C2BE5D8FA8126822B9929CA0B81EA0DE38E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X826180541412D574CF1336D22C0C0A287822678A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8F8221AFBB33998D8584A2B05749BA73C37A938A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X292FCDD1B104DE5A00250FEBBA9BC6A5092A0076",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCCC8CB5229B0AC8069C51FD58367FD1E622AFD97",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X71AB77B7DBB4FA7E017BC15090B2163221420282",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF06CE11836851D71E74E4FFEFA7B73FCC8A27786",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X08A1C30BBB26425C1031EE9E43FA0B9960742539",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X69AF81E73A73B40ADF4F3D4223CD9B1ECE623074",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X69AF81E73A73B40ADF4F3D4223CD9B1ECE623074",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDEF1CA1FB7FBCDC777520AA7F396B4E015F497AB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0B38210EA11411557C13457D4DA7DC6EA731B88A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0B38210EA11411557C13457D4DA7DC6EA731B88A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77FBA179C79DE5B7653F68B5039AF940ADA60CE0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77FBA179C79DE5B7653F68B5039AF940ADA60CE0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7448C7456A97769F6CD04F1E83A4A23CCDC46ABD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E15A54B5ECAC17E58DADEDDBE8506A7560252F9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE67D97B8770DC98C746A3FC0093C538666EB493",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDD3B11EF34CD511A2DA159034A05FCB94D806686",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4C1746A800D224393FE2470C70A35717ED4EA5F1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X259338656198EC7A76C729514D3CB45DFBF768A1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAD8C787992428CD158E451AAB109F724B6BC36DE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X624E2E7FDC8903165F64891672267AB0FCB98831",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X767FE9EDC9E0DF98E07454847909B5E959D7CA0E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X767FE9EDC9E0DF98E07454847909B5E959D7CA0E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA88594D404727625A9437C3F886C7643872296AE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X81A7DA4074B8E0ED51BEA40F9DCBDF4D9D4832B4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X27702A26126E0B3702AF63EE09AC4D1A084EF628",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF17E65822B568B3903685A7C9F496CF7656CC6C2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEF4461891DFB3AC8572CCF7C794664A8DD927945",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEF4461891DFB3AC8572CCF7C794664A8DD927945",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6810E776880C02933D47DB1B9FC05908E5386B96",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5D3772CE50DEDCA695197373F858BFB324E32E5A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAF5191B0DE278C7286D6C7CC6AB6BB8A73BA2CD6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9AD37205D608B8B219E6A2573F922094CEC5C200",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA8D3DEE6671C4FDAC4743A1EB1F276EABD4BA302",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD262A4C7108C8139B2B189758E8D17C3DFC91A38",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X06A01A4D579479DD5D884EBF61A31727A3D8D442",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X06A01A4D579479DD5D884EBF61A31727A3D8D442",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB3B32F9F8827D4634FE7D973FA1034EC9FDDB3B3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAA036928C9C0DF07D525B55EA8EE690BB5A628C1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD47BDF574B4F76210ED503E0EFE81B58AA061F3D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1FFEFD8036409CB6D652BD610DE465933B226917",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF5104D094E3864CFCBDA43B82E1CEFD26A016EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF5104D094E3864CFCBDA43B82E1CEFD26A016EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA0246C9032BC3A600820415AE600C6388619A14D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X60322971A672B81BCCE5947706D22C19DAECF6FB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X48A18A4782B65A0FBED4DCA608BB28038B7BE339",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBDF317F9C153246C429F23F4093087164B145390",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3E5A19C91266AD8CE2477B91585D1856B84062DF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F9840A85D5AF5BF1D1762F925BDADDC4201F984",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F9840A85D5AF5BF1D1762F925BDADDC4201F984",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F9840A85D5AF5BF1D1762F925BDADDC4201F984",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8B194370825E37B33373E74A41009161808C1488",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFDFFB411C4A70AA7C95D5C981A6FB4DA867E1111",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFDFFB411C4A70AA7C95D5C981A6FB4DA867E1111",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6982508145454CE325DDBE47A25D4EC3D2311933",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6982508145454CE325DDBE47A25D4EC3D2311933",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X607F4C5BB672230E8672085532F7E901544A7375",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X607F4C5BB672230E8672085532F7E901544A7375",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0C78D4605C2972E5F989DE9019DE1FB00C5D3462",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BEF15D938D4E72056AC92EA4BDD0D76B1C4AD29",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFED13D0C40790220FBDE712987079EDA1ED75C51",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C6149AAEA8161E2015FA563040A916E90D16DCA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB9F599CE614FEB2E1BBE58F180F370D05B39344E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1B4617734C43F6159F3A70B7E06D883647512778",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1111111111166B7FE7BD91427724B487980AFC69",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1111111111166B7FE7BD91427724B487980AFC69",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8C907E0A72C3D55627E853F4EC6A96B0C8771145",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF0DB65D17E30A966C2AE6A21F6BBA71CEA6E9754",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X31C8EACBFFDD875C74B94B077895BD78CF1E64A3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF944E35F95E819E752F3CCB5FAF40957D311E8C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF944E35F95E819E752F3CCB5FAF40957D311E8C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8290333CEF9E6D528DD5618FB97A76F268F3EDD4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9FF58067BD8D239000010C154C6983A325DF138E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA64455A4553C9034236734FADDADDBB64ACE4CC7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA64455A4553C9034236734FADDADDBB64ACE4CC7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X00000000BCA93B25A6694CA3D2109D545988B13B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8729438EB15E2C8B576FCC6AECDA6A148776C0F5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77146784315BA81904D654466968E3A7C196D1F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77146784315BA81904D654466968E3A7C196D1F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X98D0BAA52B2D063E780DE12F615F963FE8537553",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1F57DA732A77636D913C9A75D685B26CC85DCC3A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X98D0BAA52B2D063E780DE12F615F963FE8537553",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFE0C30065B384F05761F15D0CC899D4F9F9CC0EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFE0C30065B384F05761F15D0CC899D4F9F9CC0EB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X475BFAA1848591AE0E6AB69600F48D828F61A80E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9E711221B34A2D4B8F552BD5F4A6C4E7934920F7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E2A43BE0B1D33B726F0CA3B8DE60B3482B8B050",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X16CDA4028E9E872A38ACB903176719299BEAED87",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE6829D9A7EE3040E1276FA75293BDE931859E8FA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA9E8ACF069C58AEC8825542845FD754E41A9489A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBE7E12B2E128BC955A0130FFB168F031D7DD8D58",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X745407C86DF8DB893011912D3AB28E68B62E49B0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X745407C86DF8DB893011912D3AB28E68B62E49B0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC23DB46993F643F1FA0494CD30F9F43505885D84",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA9B1EB5908CFC3CDF91F9B8B3A74108598009096",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8FE815417913A93EA99049FC0718EE1647A2A07C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X15E6E0D4EBEAC120F9A97E71FAA6A0235B85ED12",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X888888848B652B3E3A0F34C96E00EEC0F3A23F72",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XADBAF88B39D37DC68775ED1541F1BF83A5A45FEB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X20415D302D59AD80DB4FBA4C15F57A58B8DCCA32",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD955C9BA56FB1AB30E34766E252A97CCCE3D31A6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AB3D4C385B400F3ABB49E80DE2FAF6A88A7B691",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AB3D4C385B400F3ABB49E80DE2FAF6A88A7B691",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAAAAAA20D9E0E2461697782EF11675F668207961",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFE2DD2D57A05F89438F3AEC94EAFA4070396BAB0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFCA59CD816AB1EAD66534D82BC21E7515CE441CF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD47F3E45B23B7594F5D5E1CCFDE63237C60BE49E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X67543CF0304C19CA62AC95BA82FD4F4B40788DC1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1865DC79A9E4B5751531099057D7EE801033D268",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X88DF592F8EB5D7BD38BFEF7DEB0FBC02CF3778A0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X88DF592F8EB5D7BD38BFEF7DEB0FBC02CF3778A0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9AB7BB7FDC60F4357ECFEF43986818A2A3569C62",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9AB7BB7FDC60F4357ECFEF43986818A2A3569C62",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4575F41308EC1483F3D399AA9A2826D74DA13DEB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCC4304A31D09258B0029EA7FE63D032F52E44EFE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFEA292E5EA4510881BDB840E3CEC63ABD43F936F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X675B68AA4D9C2D3BB3F0397048E62E6B7192079C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8DE5B80A0C1B02FE4976851D030B36122DBB8624",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6DFA5CFB15A439F78B118A14780E7C07A14148AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF0D33BEDA4D734C72684B5F9ABBEBF715D0A7935",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3BD7D4F524D09F4E331577247A048D56E4B67A7F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2C24497D4086490E7EAD87CC12597FB50C2E6ED6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC9CCBD76C2353E593CC975F13295E8289D04D3BB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9040E237C3BF18347BB00957DC22167D0F2B999D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEC53BF9167F50CDEB3AE105F56099AAAB9061F83",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEC53BF9167F50CDEB3AE105F56099AAAB9061F83",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB2617246D0C6C0087F18703D576831899CA94F01",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC48823EC67720A04A9DFD8C7D109B2C3D6622094",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6226E00BCAC68B0FE55583B90A1D727C14FAB77F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4B12507E171970B3ACD48EDFEB5BD1C676E61280",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X758FB037A375F17C7E195CC634D77DA4F554255B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X49F1D4DB3EA1A64390E990C6DEBEAC88EAC007CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4ED4E862860BED51A9570B96D89AF5E1B0EFEFED",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA7AD9DEA9397CFFDDAE2F8A052B82F1484252B3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA7AD9DEA9397CFFDDAE2F8A052B82F1484252B3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X59264F02D301281F3393E1385C0AEFD446EB0F00",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X59264F02D301281F3393E1385C0AEFD446EB0F00",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X46EE3BFC281D59009CCD06F1DD6ABDBFCD82FFC3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X46EE3BFC281D59009CCD06F1DD6ABDBFCD82FFC3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA12BC7B210E61E5D3110B997A63EA216E0E18F7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X96DD399F9C3AFDA1F194182F71600F1B65946501",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7FC66500C84A76AD7E9C93437BFC5AC33E2DDAE9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7FC66500C84A76AD7E9C93437BFC5AC33E2DDAE9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8F0528CE5EF7B51152A59745BEFDD91D97091D2F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDDB3422497E61E13543BEA06989C0789117555C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4C19596F5AAFF459FA38B0F7ED92F11AE6543784",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5D3A12C42E5372B2CC3264AB3CDCF660A1555238",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBC396689893D065F41BC2C6ECBEE5E0085233447",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X940181A94A35A4569E4529A3CDFB74E38FD98631",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X940181A94A35A4569E4529A3CDFB74E38FD98631",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X940181A94A35A4569E4529A3CDFB74E38FD98631",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDEFA4E8A7BCBA345F687A2F1456F5EDD9CE97202",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDEFA4E8A7BCBA345F687A2F1456F5EDD9CE97202",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFF7D6A96AE471BBCD7713AF9CB1FEEB16CF56B41",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0808BF94D57C905F1236212654268EF82E1E594E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X33D08D8C7A168333A85285A68C0042B39FC3741D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X65EF703F5594D2573EB71AAF55BC0CB548492DF4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5A3010D4D8D3B5FB49F8B6E57FB9E48063F16700",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2781246FE707BB15CEE3E5EA354E2154A2877B16",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB705268213D593B8FD88D3FDEFF93AFF5CBDCFAE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB705268213D593B8FD88D3FDEFF93AFF5CBDCFAE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE6FD75FF38ADCA4B97FBCD938C86B98772431867",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF293D23BF2CDC05411CA0EDDD588EB1977E8DCD4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA02C49DA76A085E4E1EE60A6B920DDBC8DB599F4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA02C49DA76A085E4E1EE60A6B920DDBC8DB599F4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2DA91257961B87E69FA13B2E20931D517DC97597",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2DA91257961B87E69FA13B2E20931D517DC97597",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA35923162C49CF95E6BF26623385EB431AD920D3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3301EE63FB29F863F2333BD4466ACB46CD8323E6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3301EE63FB29F863F2333BD4466ACB46CD8323E6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77D547256A2CD95F32F67AE0313E450AC200648D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X77D547256A2CD95F32F67AE0313E450AC200648D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X626E8036DEB333B408BE468F951BDB42433CBF18",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB528EDBEF013AFF855AC3C50B381F253AF13B997",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X42BBFA2E77757C645EEAAD1655E0911A7553EFBC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X42BBFA2E77757C645EEAAD1655E0911A7553EFBC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE04DA55B74435D7B9F2C5C62D9F1B53929B09AA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA4080F1778E69467E905B8D6F72F6E441F9E9484",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X09395A2A58DB45DB0DA254C7EAA5AC469D8BDC85",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD9C2D319CD7E6177336B0A9C93C21CB48D84FB54",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2DFF88A56767223A5529EA5960DA7A3F5F766406",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA5E1988097297DCDC1F90D4DFE7909E847CBEF6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDA5E1988097297DCDC1F90D4DFE7909E847CBEF6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFA40D8FC324BCDD6BBAE0E086DE886C571C225D4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0C8B298DB4CFFE05D1BEA0BB1BA414522B33C1B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44A21B3577924DCD2E9C81A3347D204C36A55466",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X240D6FAF8C3B1A7394E371792A3BF9D28DD65515",
+      "TransferFee": 0.99
+    },
+    {
+      "ContractAddress": "0X68AE2F202799BE2008C89E2100257E66F77DA1F3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DA2641000CBB407C329310C461B2CB9C70C3046",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DA2641000CBB407C329310C461B2CB9C70C3046",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DA2641000CBB407C329310C461B2CB9C70C3046",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0176B898E92E814C06CC379E508CEB571F70BD40",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7839FBFD09DAE4D0F15BFB36B8F16F7898FBE684",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7839FBFD09DAE4D0F15BFB36B8F16F7898FBE684",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC4A1E7106D08B7FF947254B6D75CF2B877D55DAF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X39B46B212BDF15B42B166779B9D1787A68B9D0C3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB9E1FD5A02D3A33B25A14D661414E6ED6954A721",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC64500DD7B0F1794807E67802F8ABBF5F8FFB054",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAA9806C938836627ED1A41AE871C7E1889AE02CA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AFE3855358E112B5647B952709E6165E1C1EEEE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AFE3855358E112B5647B952709E6165E1C1EEEE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5AFE3855358E112B5647B952709E6165E1C1EEEE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X033BBDE722EA3CDCEC73CFFEA6581DF9F9C257DE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X91AF0FBB28ABA7E31403CB457106CE79397FD4E6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7B4BF9FECCFF207EF2CB7101CEB15B8516021ACD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B175474E89094C44DA98B954EEDEAC495271D0F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B175474E89094C44DA98B954EEDEAC495271D0F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6B175474E89094C44DA98B954EEDEAC495271D0F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X69A87C8788D4A48C1362B3B357D0E6B59C11D93F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X508E00D5CEF397B02D260D035E5EE80775E4C821",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDC035D45D973E3EC169D2276DDAB16F1E407384F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X477C2C0459004E3354BA427FA285D7C053203C0E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X477C2C0459004E3354BA427FA285D7C053203C0E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4C32964715E9A42F8D119BFA8917D57822D3ADF1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFC82BB4BA86045AF6F327323A46E80412B91B27D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFC82BB4BA86045AF6F327323A46E80412B91B27D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X99B2B1A2ADB02B38222ADCD057783D7E5D1FCC7D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6985884C4392D348587B19CB9EAAF157F13271CD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6985884C4392D348587B19CB9EAAF157F13271CD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6985884C4392D348587B19CB9EAAF157F13271CD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6468E79A80C0EAB0F9A2B574C8D5BC374AF59414",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2D5F3B0722ACD35FBB749CB936DFDD93247BBC95",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4F1960E29B2CA581A38C5C474E123F420F8092DB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBA50933C268F567BDC86E1AC131BE072C6B0B71A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE3F53C0D48360DE764DDC2A1A82C3E6DB5D4624D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X64BC2CA1BE492BE7185FAA2C8835D9B824C8A194",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA91AC63D040DEB1B7A5E4D4134AD23EB0BA07E14",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA91AC63D040DEB1B7A5E4D4134AD23EB0BA07E14",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3B604747AD1720C01DED0455728B62C0D2F100F0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X090185F2135308BAD17527004364EBCC2D37E5F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD34984D7BFF492DC3B2336EABD1758CE16DDFC2D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4EDDB15A0ABFA2C349E8065AF9214E942D9A6D36",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC00E94CB662C3520282E6F5717214004A7F26888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC00E94CB662C3520282E6F5717214004A7F26888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X00C83AECC790E8A4453E5DD3B0B4B3680501A7A7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5F4BDE007DC06B867F86EBFE4802E34A1FFEED63",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAAA9214F675316182EAA21C85F0CA99160CC3AAA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAAA9214F675316182EAA21C85F0CA99160CC3AAA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6D106C0B8D2F47C5465BDBD58D1BE253762CBBC1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6AE9701B9C423F40D54556C9A443409D79CE170A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC221B7E65FFC80DE234BBB6667ABDD46593D34F0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB4B9DC1C77BDBB135EA907FD5A08094D98883A35",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF0C122C6B73FF809C693DB761E7BAEBE62B6A2E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF0C122C6B73FF809C693DB761E7BAEBE62B6A2E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCF0C122C6B73FF809C693DB761E7BAEBE62B6A2E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8B15CBB7ECD9B8FFF38DA8EAD55A20490B99AD11",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0D88ED6E74BBFD96B831231638B66C05571E824F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB994882A1B9BD98A71DD6EA5F61577C42848B0E8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X54523D5FB56803BAC758E8B10B321748A77AE9E9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE7C6BF469E97EEB0BFB74C8DBFF5BD47D4C1C98A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23D3F4EAAA515403C6765BB623F287A8CCA28F2B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC18360217D8F7AB5E7C516566761EA12CE7F9D72",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC18360217D8F7AB5E7C516566761EA12CE7F9D72",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE53EC727DBDEB9E2D5456C3BE40CFF031AB40A55",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23D3F4EAAA515403C6765BB623F287A8CCA28F2B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9CDF242EF7975D8C68D5C1F5B6905801699B1940",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE9572938BCBF08ADCEE86FD12A7C0D08DC4AB841",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X58B6A8A3302369DAEC383334672404EE733AB239",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE41B275AAAF484B541A5881A2DDED9515184CCA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBB95CC1C662D89822BDA29D2E147B124406E6E42",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4C9EDD5852CD905F086C759E8383E09BFF1E68B3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X31DBA3C96481FDE3CD81C2AAF51F2D8BF618C742",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0B5A91A43CB798C45FD56BFB5D41C13C42A7AFA8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6CDD08DE79231A1957F205A3FE5CF9DBF4B0C454",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB70835D7822EBB9426B56543E391846C107BD32C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAA247C0D81B83812E1ABF8BAB078E4540D87E3FB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8E729198D1C59B82BD6BBA579310C40D740A11C2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9F8F72AA9304C8B593D555F12EF6589CC3A579A2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBF2179859FC6D5BEE9BF9158632DC51678A4100E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X161E113B8E9BBAEFB846F73F31624F6F9607BD44",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9A33406165F562E16C3ABD82FD1185482E01B49A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X47474747477B199288BF72A1D702F7FE0FB1DEEA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD968196FA6977C4E58F2AF5AC01C655EA8332D22",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF63E309818E4EA13782678CE6C31C1234FA61809",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8C76DBEA329EC4FA987AFC514F805B21B249D79",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3593D125A4F7849A1B059E64F4517A86DD60C95D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3593D125A4F7849A1B059E64F4517A86DD60C95D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCB5327ED4649548E0D73E70B633CDFD99AF6DA87",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD7EFB00D12C2C13131FD319336FDF952525DA2AF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE4EE8057785A7E8E800DB58F9784845A5C2CBD6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE4EE8057785A7E8E800DB58F9784845A5C2CBD6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE4EE8057785A7E8E800DB58F9784845A5C2CBD6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB64EF51C888972C908CFACF59B47C1AFBC0AB8AC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE28B3B32B6C345A34FF64674606124DD5ACECA30",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BA5657BBFF83CB579503847C6BAA47295EF79A8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF816507E690F5AA4E29D164885EB5FA7A5627860",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA974C709CFB4566686553A20790685A47ACEAA33",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4A9A2B2B04549C3927DD2C9668A5EF3FCA473623",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X070A9867EA49CE7AFC4505817204860E823489FE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAD600060A153BC35BD8997CEFE959EFB19026757",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5F64AB1544D28732F0A24F4713C2C8EC0DA089F0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X84AFFEEF925CDCE87F8A99B7B2E540DA5140FC09",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X201BC9F242F74C47BBD898A5DC99CDCD81A21943",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5A666C7D92E5FA7EDCB6390E4EFD6D0CDD69CF37",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X455E53CBB86018AC2B8092FDCD39D8444AFFC3F6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X58538E6A46E07434D7E7375BC268D3CB839C0133",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF091867EC603A6628ED83D274E835539D82E9CC8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DD9C5CBA05E151C895FDE1CF355C9A1D5DA6429",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7324C7C0D95CEBC73EEA7E85CBAAC0DBDF88A05B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7324C7C0D95CEBC73EEA7E85CBAAC0DBDF88A05B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X970B9BB2C0444F5E81E9D0EFB84C8CCDCDCAF84D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X970B9BB2C0444F5E81E9D0EFB84C8CCDCDCAF84D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X36C7188D64C44301272DB3293899507EABB8ED43",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE66747A101BFF2DBA3697199DCCE5B743B454759",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X857DE36F92330E1B9A21E8745C692F2CE13866CB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE831F96A7A1DCE1AA2EB760B1E296C6A74CAA9D5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA0A2EE912CAF7921EAABC866C6EF6FEC8F7E90A4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBDAB72602E9AD40FC6A6852CAF43258113B8F7A5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEEEEEB57642040BE42185F49C52F7E9B38F8EEEE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X302DFAF2CDBE51A18D97186A7384E87CF599877D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8A2279D4A90B6FE1C4B30FA660CC9F926797BAA2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD48474E7444727BF500A32D5ABE01943F3A59A64",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA89E2871A850E0E6FD8F0018EC1FC62FA75440D4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3C4B6E6E1EA3D4863700D7F76B36B7F3D3F13E3D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XED04915C23F00A313A544955524EB7DBD823143D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDB82C0D91E057E05600C8F8DC836BEB41DA6DF14",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA62CC35625B0C8DC1FAEA39D33625BB4C15BD71C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9C632E6AAA3EA73F91554F8A3CB2ED2F29605E0C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC581B735A1688071A1746C968E0798D642EDE491",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6BFF4FB161347AD7DE4A625AE5AA3A1CA7077819",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X91FBB2503AC69702061F1AC6885759FC853E6EAE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEE634A826465A1799AFC2CFEFBDB6FA3766C8888",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X491604C0FDF08347DD1FA4EE062A822A5DD06B5D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7714F320ADCA62B149DF2579361AFEC729C5FE6A",
+      "TransferFee": 0.44
+    },
+    {
+      "ContractAddress": "0X4D4574F50DD8B9DBE623CF329DCC78D76935E610",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0BB217E40F8A5CB79ADF04E1AAB60E5ABD0DFC1E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD98438889AE7364C7E2A3540547FAD042FB24642",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X26C8AFBBFE1EBACA03C2BB082E69D0476BFFE099",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X02E7F808990638E9E67E1F00313037EDE2362361",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3C6256F234BA638E5883C46B3FEDB00EA2E66B8A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X39F0F4C64C7AD1EBB25CFEAFDD221CDEE3084441",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3073F7AAA4DB83F95E9FFF17424F71D4751A3073",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XAE12C5930881C53715B369CEC7606B70D8EB229F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1E34FCC9A67E05D4BEED8C6A70F98C3E4D1E1E96",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X00309D634D11541B857F927BE91AD2F0BD78894C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X10DEA67478C5F8C5E2D90E5E9B26DBE60C54D800",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB208063997DB51DE3F0988F8A87B0AFF83A6213F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB208063997DB51DE3F0988F8A87B0AFF83A6213F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X81A382272BD2BEC1F3F9FDAB5763A500CBD8EBAD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEAA63125DD63F10874F99CDBBB18410E7FC79DD3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X01CA78A2B5F1A9152D8A3A625BD7DF5765EEE1D8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF34960D9D60BE18CC1D5AFC1A6F012A723A28811",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA73164DB271931CF952CBAEFF9E8F5817B42FA5C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44FF8620B8CA30902395A7BD3F2407E1A091BF73",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E7F11641C1EC71591828E531334192D622703F7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XCA4569949699D56E1834EFE9F58747CA0F151B01",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9E32B13CE7F2E80A01932B42553652E053D6ED8E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X299142A6370E1912156E53FBD4F25D7BA49DDCC5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3AB1A5F76E12202D1AD1548A08A799501581DA4E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3B991130EAE3CCA364406D718DA22FA1C3E7C256",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X924FA68A0FC644485B8DF8ABFA0A41C2E7744444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4DA0C48376C277CDBD7FC6FDC6936DEE3E4ADF75",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X25B4F5D4C314BCD5D7962734936C957B947CB7CF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA18BBDCD86E4178D10ECD9316667CFE4C4AA8717",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5FFD0EADC186AF9512542D0D5E5EAFC65D5AFC5B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5FFD0EADC186AF9512542D0D5E5EAFC65D5AFC5B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X722A89F1B925FE41883978219C2176AECC7D6699",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3AC8E2C113D5D7824AC6EBE82A3C60B1B9D64444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9EE8C380E1926730AD89E91665FF27063B13C90A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23F3D4625AEF6F0B84D50DB1D53516E6015C0C9B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE32F9E8F7F7222FCD83EE0FC68BAF12118448EAF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE32F9E8F7F7222FCD83EE0FC68BAF12118448EAF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X595832F8FC6BF59C85C527FEC3740A1B7A361269",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X595832F8FC6BF59C85C527FEC3740A1B7A361269",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4550003152F12014558E5CE025707E4DD841100F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE9E3D8609E50C333B7E8FAFB1A06F5443CB64444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1D42E1CD643941B26A4191E72A617ED32670DF55",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1E3DBC0AAD9671FDD31E58B2FCC6CF1CA9947994",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1E3DBC0AAD9671FDD31E58B2FCC6CF1CA9947994",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X1E3DBC0AAD9671FDD31E58B2FCC6CF1CA9947994",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE1BFA25468AF64E366DDAFC9D91BCC6C97439A14",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE1BFA25468AF64E366DDAFC9D91BCC6C97439A14",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFF8C479134A18918059493243943150776CF8CF2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE55D97A97AE6A17706EE281486E98A84095D8AAF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X986EE2B944C42D017F52AF21C4C69B84DBEA35D8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF3D5B4C34ED623478CC5141861776E6CF7AE3A1E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8248270620AA532E4D64316017BE5E873E37CC09",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X76E9B54B49739837BE8AD10C3687FC6B543DE852",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X01BF3D77CD08B19BF3F2309972123A2CCA0F6936",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X01BF3D77CD08B19BF3F2309972123A2CCA0F6936",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE9689028EDE16C2FDFE3D11855D28F8E3FC452A3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0E397938C1AA0680954093495B70A9F5E2249ABA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6D2EBDF6D551D8408E7D896E9A1EC6F84806E193",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC19B6A4AC7C7CC24459F08984BBD09664AF17BD1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDAE0FAFD65385E7775CF75B1398735155EF6ACD2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0C03CE270B4826EC62E7DD007F0B716068639F7B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X57185189118C7E786CAFD5C71F35B16012FA95AD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X23B35C7F686CAC8297EA6E81A467286481CA4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2F20CF3466F80A5F7F532FCA553C8CBC9727FEF6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2BF83D080D8BC4715984E75E5B3D149805D11751",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB77A1BD00D9C7FF5E15D70C7F78E4B80E18E4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44440F83419DE123D7D411187ADB9962DB017D03",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X678E840C640F619E17848045D23072844224DD37",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X111111111117DC0AA78B770FA6A738034120C302",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X111111111117DC0AA78B770FA6A738034120C302",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X111111111117DC0AA78B770FA6A738034120C302",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB782396C9B20E564A64896181C7AC8D8979D5F4",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X579CEA1889991F68ACC35FF5C3DD0621FF29B0C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X579CEA1889991F68ACC35FF5C3DD0621FF29B0C9",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF3AE5D769E153EF72B4E3591AC004E89F48107A1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X73B84F7E3901F39FC29F3704A03126D317AB4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0C7D5AE016F806603CB1782BEA29AC69471CAB9C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0391BE54E72F7E001F6BBC331777710B4F2999EF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3597BFD533A99C9AA083587B074434E61EB0A258",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3597BFD533A99C9AA083587B074434E61EB0A258",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X02F92800F57BCD74066F5709F1DAA1A4302DF875",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD2E7B964770FCF51DF088A5F0BB2D33A3C60CCCF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBAEA9ABA1454DF334943951D51116AE342EAB255",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA9F978C02915246E435C0BDA9785AAAAD3CC46D2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X82EC31D69B3C289E541B50E30681FD1ACAD24444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44971ABF0251958492FEE97DA3E5C5ADA88B9185",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X19ED254EFA5E061D28D84650891A3DB2A9940C16",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X19ED254EFA5E061D28D84650891A3DB2A9940C16",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X474021845C4643113458EA4414BDB7FB74A01A77",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X42476F744292107E34519F9C357927074EA3F75D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE9732D4B1E7D3789004FF029F032BA3034DB059C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4444B1E4DE34DF52CF91E30CC7C0336EE03D7C1B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3429D03C6F7521AEC737A0BBF2E5DDCEF2C3AE31",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X310C8F00B9DE3C31AB95EA68FEB6C877538F7947",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3429D03C6F7521AEC737A0BBF2E5DDCEF2C3AE31",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3429D03C6F7521AEC737A0BBF2E5DDCEF2C3AE31",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6CF271270662BE1C4FC1B7BB7D7D7FC60CC19125",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2AD9ADDD0D97EC3CDBA27F92BF6077893B76AB0B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X720CD16B011B987DA3518FBF38C3071D4F0D1495",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44443DD87EC4D1BEA3425ACC118ADB023F07F91B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X26EBB8213FB8D66156F1AF8908D43F7E3E367C1D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X473F4068073CD5B2AB0E4CC8E146F9EDC6FB52CC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X965697B4EF02F0DE01384D0D4F9F782B1670C163",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB72E76CCF005313868DB7B48070901A44629DA98",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD55210BB6898C021A19DE1F58D27B71F095921EE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDFEF6416EA3E6CE587ED42AA7CB2E586362CBBFA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X15F20F9DFDF96CCF6AC96653B7C0ABFE4A9C9F0F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X137DDB47EE24EAA998A535AB00378D6BFA84F893",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X516F8A1FB458EBDCFD0F544FF85C69C1C0EBC31D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X95AD61B0A150D79219DCF64E1E6CC01F0B64C4CE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7DDF164CECFDDD0F992299D033B5A11279A15929",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB59C8912C83157A955F9D715E556257F432C35D7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X38FD4EE2ADE8B4BE157DFEE3D6B8979C78A56145",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X715D400F88C167884BBCC41C5FEA407ED4D2F8A0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X715D400F88C167884BBCC41C5FEA407ED4D2F8A0",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2A79324C19EF2B89EA98B23BC669B7E7C9F8A517",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFBB75A59193A3525A8825BEBE7D4B56899E2F7E1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF7DE7E8A6BD59ED41A4B5FE50278B3B7F31384DF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4574562E9310A94F9CA962BD23168D8A06875B1A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA47C8BF37F92ABED4A126BDA807A7B7498661ACD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC32CC70741C3A8433DCBCB5ADE071C299B55FFC8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC32CC70741C3A8433DCBCB5ADE071C299B55FFC8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6E88056E8376AE7709496BA64D37FA2F8015CE3E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9A4A67721573F2C9209DFFF972C52BE4E3F6642E",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0A73D885CDD66ADF69C6D64C0609E55C527DB2BE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X2EDF094DB69D6DCD487F1B3DB9FEBE2EEC0DD4C5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X41DF31FF0A7C35EB9B12752F2A5C87C3A9C109F8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4D2D32D8652058BF98C772953E1DF5C5C85D9F45",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X514D8E8099286A13486EF6C525C120F51C239B52",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X514D8E8099286A13486EF6C525C120F51C239B52",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X371C7EC6D8039FF7933A2AA28EB827FFE1F52F07",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD029B392580D555F35CCA1987F27D248CF883716",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X96ADAA33E175F4A7F20C099730BC78DD0B45745B",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB86ABCB37C3A4B64F74F59301AFF131A1BECC787",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE5BDCBD4D7DFA86E527FEF9971BD6CA6A76EEFB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XDE5BDCBD4D7DFA86E527FEF9971BD6CA6A76EEFB",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD8002D4BD1D50136A731C141E3206D516E6D3B3D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0C4AC8952C28E2E7FE22033C8D2F1263372D301D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA026AD2CEDA16CA5FC28FD3C72F99E2C332C8A26",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7E975D85714B11D862C7CFFEE3C88D565A139EB7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X313CAE7AD4454AAC7B208C1F089DA2B0E5825E46",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8443F091997F06A61670B735ED92734F5628692F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X8443F091997F06A61670B735ED92734F5628692F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEA26C4AC16D4A5A106820BC8AEE85FD0B7B2B664",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEA26C4AC16D4A5A106820BC8AEE85FD0B7B2B664",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XA2C22252CDC8B7CDDEE1B0B2E242818509FCF7B8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9D173E6C594F479B4D47001F8E6A95A7ADDA42BC",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X9678E42CEBEB63F23197D726B29B1CB20D0064E5",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF307910A4C7BBC79691FD374889B36D8531B08E3",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X3019BF2A2EF8040C242C9A4C5C4BD4C81678B2A1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFEDC5F4A6C38211C1338AA411018DFAF26612C08",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC66B6F38AE5053A109CFD8639E0EE17EC69CF788",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X429F0D8233E517F9ACF6F0C8293BF35804063A83",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB0415D55F2C87B7F99285848BD341C367FEAC1EA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF8E57AC2730D3088D98B79209739B0D5BA085A03",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X6135177A17E02658DF99A07A2841464DEB5B8589",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X84F70BE4DEB029D5F8AACBEACC74C4DC10737342",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5D285F735998F36631F678FF41FB56A10A4D0429",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0112E557D400474717056C4E6D40EDD846F38351",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XC3C1B25FF8C3F828F36A030960D54082ED984444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X92516E0DDF1DDBF7FAB1B79CAC26689FDC5BA8E6",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0FCFE33B46E5B21E5E96B722D4C85510198F9255",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XF2B51CC1850FED939658317A22D73D3482767591",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X0DB510E79909666D6DEC7F5E49370838C16D950F",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44448ACA77CC60E77C90B6A60851B1BB843CC2EE",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEEB4D8400AEEFAFC1B2953E0094134A887C76BD8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD944F1D1E9D5F9BB90B62F9D45E447D989580782",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD944F1D1E9D5F9BB90B62F9D45E447D989580782",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFD9A3F94BEC6B08711D90FF69CBBA42FAC96B45A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X64B88C73A5DFA78D1713FE1B4C69A22D7E0FAAA7",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X44EC807CE2F4A6F2737A92E985F318D035883E47",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4F36319C1E35C5B8E20C1D20879980D17D908507",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X38E4ADB44EF08F22F5B5B76A8F0C2D0DCBE7DCA1",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XD5F7838F5C461FEFF7FE49EA5EBAF7728BB0ADFA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X5E049E90A324B30FBDD6E0E57052B17441CF2ABA",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X4444536331BAD0C0B9C1D7DC74B00632926DE675",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7EC43CF65F1663F820427C62A5780B8F2E25593A",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X01791F726B4103694969820BE083196CC7C045FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X01791F726B4103694969820BE083196CC7C045FF",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XEB57EC5EC83D9CC498BE2E7B5CE5FBF75A216F45",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X699F088B5DDDCAFB7C4824DB5B10B57B37CB0C66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X699F088B5DDDCAFB7C4824DB5B10B57B37CB0C66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X699F088B5DDDCAFB7C4824DB5B10B57B37CB0C66",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB40725714FE8C547C5B0C1472CBA3554EFA81718",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X7BD8C371304CC038FF8DC0E54975A719F9AA4444",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X45E57907058C707A068100DE358BA4535B18E2F3",
+      "TransferFee": 0.99
+    },
+    {
+      "ContractAddress": "0X33B481CBBF3C24F2B3184EE7CB02DAAD1C4F49A8",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X81D3A238B02827F62B9F390F947D36D4A5BF89D2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X81D3A238B02827F62B9F390F947D36D4A5BF89D2",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XE0969EC84456B7E4D3DD2181FB5265EDBB63F7BD",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XBB7D61D2511FD2E63F02178CA9B663458AF9FC63",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XB5AB5CF2E2C686AE43F01F23859F3A55A8629C1C",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB93EE8152DD0A0E6F4B49C66C06D800CF1DB72D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0XFB93EE8152DD0A0E6F4B49C66C06D800CF1DB72D",
+      "TransferFee": 0
+    },
+    {
+      "ContractAddress": "0X32462BA310E447EF34FF0D15BCE8613AA8C4A244",
+      "TransferFee": 0
+    }
+  ]
+}

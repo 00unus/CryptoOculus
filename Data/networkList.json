@@ -1,0 +1,141 @@
+{
+    "NetworkList": [
+        {
+            "Id": 0,
+            "NetworkName": "Ethereum",
+            "CEXs": [
+                "ETH",
+                "ERC20",
+                "Ethereum",
+                "ERC404",
+                "TETHERXAUTE",
+                "TETHEREUE"
+            ]
+        },
+        {
+            "Id": 1,
+            "NetworkName": "BNB Smart Chain",
+            "CEXs": [
+                "BSC",
+                "BEP20",
+                "BNB",
+                "BEP20(BSC)",
+                "BNBSmartChain",
+                "BSC_BNB",
+                "BEP20USDC",
+                "BNBChain"
+            ]
+        },
+        {
+            "Id": 2,
+            "NetworkName": "Solana",
+            "CEXs": [
+                "SOL",
+                "SOLANA",
+                "SOL-SOL",
+                "SOLUSDC",
+                "SPL"
+            ]
+        },
+        {
+            "Id": 3,
+            "NetworkName": "Arbitrum One",
+            "CEXs": [
+                "ARBITRUM",
+                "ARB",
+                "ARBI",
+                "ARBEVM",
+                "ArbitrumOne",
+                "ARBIETH",
+                "ARC20",
+                "Arbitrum-One",
+                "ARETH",
+                "ETHARB"
+            ]
+        },
+        {
+            "Id": 4,
+            "NetworkName": "Optimism",
+            "CEXs": [
+                "OPTIMISM",
+                "OP",
+                "OPETH",
+                "OPTETH",
+                "OPTUSDC1",
+                "Optimism(V2)",
+                "OPT",
+                "OETH",
+                "ETHOP",
+                "OPX"
+            ]
+        },
+        {
+            "Id": 5,
+            "NetworkName": "Base",
+            "CEXs": [
+                "BASE",
+                "BASEEVM",
+                "BASE-ETH",
+                "BASEETH",
+                "BASEMAINNET",
+                "ETHBASE",
+                "base mainnet",
+                "BASEERC20"
+            ]
+        },
+        {
+            "Id": 6,
+            "NetworkName": "Tron",
+            "CEXs": [
+                "TRX",
+                "TRC20",
+                "TRC20USDD",
+                "Tron",
+                "TRC10"
+            ]
+        },
+        {
+            "Id": 7,
+            "NetworkName": "The Open Network",
+            "CEXs": [
+                "TON",
+                "TONCOIN",
+                "OPENTON",
+                "TONMEMO",
+                "TheOpenNetwork"
+            ]
+        },
+        {
+            "Id": 8,
+            "NetworkName": "AVAX C-CHAIN",
+            "CEXs": [
+                "AVAXC",
+                "AVAX_CCHAIN",
+                "CAVAX",
+                "AVAX_C",
+                "AVAXC-Chain",
+                "AVAX-C",
+                "AVAXCCHAIN",
+                "CCHAINERC20",
+                "CCHAIN",
+                "AvalancheC-Chain",
+                "C-CHAIN",
+                "AVA_C",
+                "AVAX-CCHAIN",
+                "AVAX",
+                "avalancheCchain"
+            ]
+        },
+        {
+            "Id": 9,
+            "NetworkName": "Polygon",
+            "CEXs": [
+                "Polygon",
+                "MATIC",
+                "POL",
+                "POLPOLY",
+                "PolygonPOS"
+            ]
+        }
+    ]
+}

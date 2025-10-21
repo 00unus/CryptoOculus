@@ -1,0 +1,12 @@
+.vs/
+bin/
+Cache/
+Logs/
+obj/
+Data/apiKeys.json
+Data/proxyList.txt
+Utils/BlacklistGenerator/bin/
+Utils/BlacklistGenerator/obj/
+Properties/
+appsettings.Development.json
+*.user
