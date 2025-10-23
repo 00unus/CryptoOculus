@@ -7,7 +7,7 @@ namespace CryptoOculus.Services
     {
         public int ExchangeId { get; } = 7;
         public string ExchangeName { get; } = "KuCoin";
-        public string[] Hosts { get; } = ["api.kucoin.com"];
+        public string[] Hosts { get; } = ["api.kucoin.com", "www.kucoin.com"];
         public string[] Ips { get; set; } = [];
 
         private void ValidateKucoinExchangeInfo(HttpRequestMessage request)
@@ -33,6 +33,15 @@ namespace CryptoOculus.Services
             KucoinPrices model = ClientService.Deserialize<KucoinPrices>(request);
 
             if (model.Data is null || model.Code != "200000")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
+        private void ValidateKucoinFeeConfig(HttpRequestMessage request)
+        {
+            KucoinFeeConfig model = ClientService.Deserialize<KucoinFeeConfig>(request);
+
+            if (model.Data is null || model.Code != "200" || model.Msg != "success" || !model.Success)
             {
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
@@ -82,17 +91,30 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<KucoinPrices>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query comission
+            async Task<KucoinFeeConfig> FeeConfig()
+            {
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[1]}/_api/trade-marketing/feeConfig/groupedConfig").WithVersion();
+                request.Headers.Host = Hosts[1];
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateKucoinFeeConfig);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<KucoinFeeConfig>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<KucoinExchangeInfo> exInfoTask = ExInfo();
                 Task<KucoinContractAddresses> contractTask = Contract();
                 Task<KucoinPrices> pricesTask = Prices();
+                Task<KucoinFeeConfig> feeConfigTask = FeeConfig();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, feeConfigTask]);
 
                 KucoinExchangeInfo exchangeInfo = await exInfoTask;
                 KucoinContractAddresses contractAddresses = await contractTask;
                 KucoinPrices prices = await pricesTask;
+                KucoinFeeConfig feeConfig = await feeConfigTask;
 
                 List<Pair> pairs = [];
 
@@ -108,16 +130,30 @@ namespace CryptoOculus.Services
                             {
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
-                                BaseAsset = exchangeInfo.Data[i].BaseCurrency,
-                                QuoteAsset = exchangeInfo.Data[i].QuoteCurrency
+                                BaseAsset = exchangeInfo.Data[i].BaseCurrency.ToUpper(),
+                                QuoteAsset = exchangeInfo.Data[i].QuoteCurrency.ToUpper(),
+                                Url = $"https://www.kucoin.com/trade/{exchangeInfo.Data[i].BaseCurrency.ToUpper()}-{exchangeInfo.Data[i].QuoteCurrency.ToUpper()}"
                             };
+
+                            //Adding commision
+                            if (feeConfig.Data is not null)
+                            {
+                                for (int a = 0; a < feeConfig.Data.Length; a++)
+                                {
+                                    if (feeConfig.Data[a].GroupLevel == exchangeInfo.Data[i].FeeCategory)
+                                    {
+                                        pair.SpotTakerComission = double.Parse(feeConfig.Data[a].TradeFeeConfigs[0].SpotTakerFee);
+                                        break;
+                                    }
+                                }
+                            }
 
                             //adding price of pair
                             if (prices.Data is not null)
                             {
                                 for (int a = 0; a < prices.Data.Ticker.Length; a++)
                                 {
-                                    if (prices.Data.Ticker[a].Symbol == exchangeInfo.Data[i].Symbol)
+                                    if (prices.Data.Ticker[a].Symbol.Equals(exchangeInfo.Data[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Data.Ticker[a].Sell, out double askPrice))
                                         {
@@ -139,7 +175,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int b = 0; b < contractAddresses.Data.Length; b++)
                                 {
-                                    if (contractAddresses.Data[b].Currency == exchangeInfo.Data[i].BaseCurrency)
+                                    if (contractAddresses.Data[b].Currency.Equals(exchangeInfo.Data[i].BaseCurrency, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         List<AssetNetwork> baseAssetNetworks = [];
                                         for (int c = 0; c < contractAddresses.Data[b].Chains.Length; c++)
@@ -150,7 +186,9 @@ namespace CryptoOculus.Services
                                                 {
                                                     NetworkName = contractAddresses.Data[b].Chains[c].ChainName,
                                                     DepositEnable = contractAddresses.Data[b].Chains[c].IsDepositEnabled,
-                                                    WithdrawEnable = contractAddresses.Data[b].Chains[c].IsWithdrawEnabled
+                                                    WithdrawEnable = contractAddresses.Data[b].Chains[c].IsWithdrawEnabled,
+                                                    DepositUrl = $"https://www.kucoin.com/assets/coin/{contractAddresses.Data[b].Currency.ToUpper()}",
+                                                    WithdrawUrl = $"https://www.kucoin.com/assets/withdraw/{contractAddresses.Data[b].Currency.ToUpper()}"
                                                 };
 
                                                 if (!String.IsNullOrWhiteSpace(contractAddresses.Data[b].Chains[c].ContractAddress))
@@ -200,8 +238,7 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Kucoin/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/kucoin.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
 
                 return [.. pairs];
             }

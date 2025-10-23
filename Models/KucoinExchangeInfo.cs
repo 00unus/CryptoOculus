@@ -45,6 +45,8 @@ namespace CryptoOculus.Models
         public bool IsMarginEnabled { get; set; }
         [JsonPropertyName("enableTrading")]
         public bool EnableTrading { get; set; }
+        [JsonPropertyName("feeCategory")]
+        public int FeeCategory { get; set; }
     }
 
 
@@ -161,6 +163,53 @@ namespace CryptoOculus.Models
         public string? TakerCoefficient { get; set; }
         [JsonPropertyName("makerCoefficient")]
         public string? MakerCoefficient { get; set; }
+    }
+
+
+    public class KucoinFeeConfig
+    {
+        [JsonPropertyName("success")]
+        public bool Success { get; set; }
+
+        [JsonPropertyName("code")]
+        public string? Code { get; set; }
+
+        [JsonPropertyName("msg")]
+        public string? Msg { get; set; }
+
+        [JsonPropertyName("retry")]
+        public bool Retry { get; set; }
+
+        [JsonPropertyName("data")]
+        public KucoinFeeConfigData[]? Data { get; set; }
+    }
+    public class KucoinFeeConfigData
+    {
+        [JsonPropertyName("groupLevel")]
+        public int GroupLevel { get; set; }
+
+        [JsonPropertyName("tradeFeeConfigs")]
+        public required KucoinFeeConfigTradeFeeConfig[] TradeFeeConfigs { get; set; }
+    }
+    public class KucoinFeeConfigTradeFeeConfig
+    {
+        [JsonPropertyName("level")]
+        public int Level { get; set; }
+
+        [JsonPropertyName("spotTakerFee")]
+        public required string SpotTakerFee { get; set; }
+
+        [JsonPropertyName("spotMakerFee")]
+        public string? SpotMakerFee { get; set; }
+
+        [JsonPropertyName("kcsTakerFee")]
+        public string? KcsTakerFee { get; set; }
+
+        [JsonPropertyName("kcsMakerFee")]
+        public string? KcsMakerFee { get; set; }
+
+        [JsonPropertyName("kcsDiscountFeeRate")]
+        public string? KcsDiscountFeeRate { get; set; }
     }
 
 

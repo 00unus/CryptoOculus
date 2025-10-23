@@ -154,15 +154,14 @@ namespace CryptoOculus.Services
                                     {
                                         if (contractAddresses.Data[b].CanDep || contractAddresses.Data[b].CanWd)
                                         {
+                                            string[] splitChainName = contractAddresses.Data[b].Chain.Split(['-'], 2);
                                             AssetNetwork assetNetwork = new()
                                             {
+                                                NetworkName = splitChainName[1],
+                                                DepositEnable = contractAddresses.Data[b].CanDep,
+                                                WithdrawEnable = contractAddresses.Data[b].CanWd,
                                                 TransferTax = 0
                                             };
-
-                                            string[] splitChainName = contractAddresses.Data[b].Chain.Split(['-'], 2);
-                                            assetNetwork.NetworkName = splitChainName[1];
-                                            assetNetwork.DepositEnable = contractAddresses.Data[b].CanDep;
-                                            assetNetwork.WithdrawEnable = contractAddresses.Data[b].CanWd;
 
                                             if (!String.IsNullOrWhiteSpace(contractAddresses.Data[b].CtAddr))
                                             {

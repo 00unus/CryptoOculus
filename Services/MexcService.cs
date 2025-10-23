@@ -96,7 +96,7 @@ namespace CryptoOculus.Services
                             BaseAsset = exchangeInfo.Symbols[i].BaseAsset.ToUpper(),
                             QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper(),
                             Url = $"https://www.mexc.com/exchange/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}",
-                            SpotComission = double.Parse(exchangeInfo.Symbols[i].TakerCommission)
+                            SpotTakerComission = double.Parse(exchangeInfo.Symbols[i].TakerCommission)
                         };
 
                         //adding price of pair

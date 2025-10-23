@@ -72,7 +72,7 @@ namespace CryptoOculus.Models
         [JsonPropertyName("contract_address")]
         public string? Contract_address { get; set; }
         [JsonPropertyName("network")]
-        public string? Network { get; set; }
+        public required string Network { get; set; }
         [JsonPropertyName("withdraw_enabled")]
         public bool Withdraw_enabled { get; set; }
         [JsonPropertyName("deposit_enabled")]
@@ -94,6 +94,69 @@ namespace CryptoOculus.Models
         public string? Message { get; set; }
         [JsonPropertyName("data")]
         public string[][]? Data { get; set; }
+    }
+
+
+    public class BitmartUserFee
+    {
+        [JsonPropertyName("message")]
+        public string? Message { get; set; }
+
+        [JsonPropertyName("code")]
+        public int Code { get; set; }
+
+        [JsonPropertyName("trace")]
+        public string? Trace { get; set; }
+
+        [JsonPropertyName("data")]
+        [JsonConverter(typeof(DictionaryStringConverter))]
+        public required Dictionary<string, string> Data { get; set; }
+    }
+
+
+    public class BitmartFeeRate
+    {
+        [JsonPropertyName("code")]
+        public int Code { get; set; }
+
+        [JsonPropertyName("msg")]
+        public string? Msg { get; set; }
+
+        [JsonPropertyName("subMsg")]
+        public string? SubMsg { get; set; }
+
+        [JsonPropertyName("elapseMills")]
+        public int ElapseMills { get; set; }
+
+        [JsonPropertyName("data")]
+        public BitmartFeeRateData? Data { get; set; }
+
+        [JsonPropertyName("success")]
+        public bool Success { get; set; }
+    }
+    public class BitmartFeeRateData
+    {
+        [JsonPropertyName("feeRateList")]
+        public BitmartFeeRateList[]? FeeRateList { get; set; }
+    }
+    public class BitmartFeeRateList
+    {
+        [JsonPropertyName("feeRateType")]
+        public int FeeRateType { get; set; }
+
+        [JsonPropertyName("feeRateName")]
+        public string? FeeRateName { get; set; }
+
+        [JsonPropertyName("classList")]
+        public required BitmartFeeRateClassList[] ClassList { get; set; }
+    }
+    public class BitmartFeeRateClassList
+    {
+        [JsonPropertyName("symbolId")]
+        public int SymbolId { get; set; }
+
+        [JsonPropertyName("symbolName")]
+        public string? SymbolName { get; set; }
     }
 
 

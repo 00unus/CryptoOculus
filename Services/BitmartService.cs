@@ -3,11 +3,11 @@ using System.Text.Json;
 
 namespace CryptoOculus.Services
 {
-    public class BitmartService(IHttpClientFactory httpClientFactory, ILogger<BitmartService> logger, IWebHostEnvironment env) : IExchange, IDnsUpdate
+    public class BitmartService(IHttpClientFactory httpClientFactory, ILogger<BitmartService> logger, IWebHostEnvironment env, ApiKeysService apiKeys) : IExchange, IDnsUpdate
     {
         public int ExchangeId { get; } = 5;
         public string ExchangeName { get; } = "BitMart";
-        public string[] Hosts { get; } = ["api-cloud.bitmart.com"];
+        public string[] Hosts { get; } = ["api-cloud.bitmart.com", "www.bitmart.com"];
         public string[] Ips { get; set; } = [];
 
         private void ValidateBitmartExchangeInfo(HttpRequestMessage request)
@@ -33,6 +33,24 @@ namespace CryptoOculus.Services
             BitmartPrices model = ClientService.Deserialize<BitmartPrices>(request);
 
             if (model.Data is null || model.Code != 1000 || model.Message != "success")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
+        private void ValidateBitmartUserFee(HttpRequestMessage request)
+        {
+            BitmartUserFee model = ClientService.Deserialize<BitmartUserFee>(request);
+
+            if (model.Data is null || model.Code != 1000 || model.Message != "OK")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
+        private void ValidateBitmartFeeRate(HttpRequestMessage request)
+        {
+            BitmartFeeRate model = ClientService.Deserialize<BitmartFeeRate>(request);
+
+            if (model.Data is null || model.Code != 0 || model.Msg != "Success" || !model.Success)
             {
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
@@ -82,17 +100,45 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<BitmartPrices>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query spot comissions by class
+            async Task<BitmartUserFee> UserFee()
+            {
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/spot/v1/user_fee").WithVersion();
+                request.Headers.Host = Hosts[0];
+                request.Headers.Add("X-BM-KEY", apiKeys.GetSingle("BitmartApiKey"));
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBitmartUserFee);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<BitmartUserFee>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
+            //Query pairs by class
+            async Task<BitmartFeeRate> FeeRate()
+            {
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[1]}/gw-api/ds/search/symbol-list/fee-rate").WithVersion();
+                request.Headers.Host = Hosts[1];
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBitmartFeeRate);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<BitmartFeeRate>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<BitmartExchangeInfo> exInfoTask = ExInfo();
                 Task<BitmartContractAddress> contractTask = Contract();
                 Task<BitmartPrices> pricesTask = Prices();
+                Task<BitmartUserFee> userFeeTask = UserFee();
+                Task<BitmartFeeRate> feeRateTask = FeeRate();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, userFeeTask, feeRateTask]);
 
                 BitmartExchangeInfo exchangeInfo = await exInfoTask;
                 BitmartContractAddress contractAddresses = await contractTask;
                 BitmartPrices prices = await pricesTask;
+                BitmartUserFee userFee = await userFeeTask;
+                BitmartFeeRate feeRate = await feeRateTask;
 
                 List<Pair> pairs = [];
 
@@ -108,9 +154,34 @@ namespace CryptoOculus.Services
                             {
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
-                                BaseAsset = exchangeInfo.Data.Symbols[i].Base_currency,
-                                QuoteAsset = exchangeInfo.Data.Symbols[i].Quote_currency
+                                BaseAsset = exchangeInfo.Data.Symbols[i].Base_currency.ToUpper(),
+                                QuoteAsset = exchangeInfo.Data.Symbols[i].Quote_currency.ToUpper(),
+                                Url = $"https://www.bitmart.com/trade/{exchangeInfo.Data.Symbols[i].Base_currency.ToUpper()}_{exchangeInfo.Data.Symbols[i].Quote_currency.ToUpper()}"
                             };
+
+                            //adding spot taker commision
+                            if (feeRate.Data is not null && feeRate.Data.FeeRateList is not null)
+                            {
+                                for (int a = 0; a < feeRate.Data.FeeRateList.Length; a++)
+                                {
+                                    bool isAdded = false;
+                                    for (int b = 0; b < feeRate.Data.FeeRateList[a].ClassList.Length; b++)
+                                    {
+                                        if (feeRate.Data.FeeRateList[a].ClassList[b].SymbolId == exchangeInfo.Data.Symbols[i].Symbol_id &&
+                                            userFee.Data.TryGetValue($"taker_fee_rate_{feeRate.Data.FeeRateList[a].FeeRateName}", out string? spotCommision))
+                                        {
+                                            pair.SpotTakerComission = double.Parse(spotCommision);
+                                            isAdded = true;
+                                            break;
+                                        }
+                                    }
+
+                                    if (isAdded)
+                                    {
+                                        break;
+                                    }
+                                }
+                            }
 
                             //adding price of pair
                             if (prices.Data is not null)
@@ -142,7 +213,8 @@ namespace CryptoOculus.Services
                                 for (int b = 0; b < contractAddresses.Data.Currencies.Length; b++)
                                 {
                                     string[] split = contractAddresses.Data.Currencies[b].Currency.Split("-");
-                                    if (split[0] == exchangeInfo.Data.Symbols[i].Base_currency)
+
+                                    if (split[0].Equals(exchangeInfo.Data.Symbols[i].Base_currency, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (contractAddresses.Data.Currencies[b].Deposit_enabled || contractAddresses.Data.Currencies[b].Withdraw_enabled)
                                         {
@@ -150,7 +222,9 @@ namespace CryptoOculus.Services
                                             {
                                                 NetworkName = contractAddresses.Data.Currencies[b].Network,
                                                 DepositEnable = contractAddresses.Data.Currencies[b].Deposit_enabled,
-                                                WithdrawEnable = contractAddresses.Data.Currencies[b].Withdraw_enabled
+                                                WithdrawEnable = contractAddresses.Data.Currencies[b].Withdraw_enabled,
+                                                DepositUrl = $"https://www.bitmart.com/asset-deposit",
+                                                WithdrawUrl = $"https://www.bitmart.com/asset-withdrawal"
                                             };
 
                                             //Withraw fee
@@ -201,9 +275,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Bitmart/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/bitmart.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)

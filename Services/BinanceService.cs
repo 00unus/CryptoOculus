@@ -96,7 +96,7 @@ namespace CryptoOculus.Services
                             BaseAsset = exchangeInfo.Symbols[i].BaseAsset.ToUpper(),
                             QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper(),
                             Url = $"https://www.binance.com/trade/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}?type=spot",
-                            SpotComission = 0.001
+                            SpotTakerComission = 0.001
                         };
 
                         //adding price of pair

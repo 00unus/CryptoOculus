@@ -142,6 +142,33 @@ namespace CryptoOculus.Models
     }
 
 
+    public class BingxCommission
+    {
+        [JsonPropertyName("code")]
+        public int Code { get; set; }
+
+        [JsonPropertyName("msg")]
+        public string? Msg { get; set; }
+
+        [JsonPropertyName("debugMsg")]
+        public string? DebugMsg { get; set; }
+
+        [JsonPropertyName("retryable")]
+        public int Retryable { get; set; }
+
+        [JsonPropertyName("data")]
+        public BingxCommissionData? Data { get; set; }
+    }
+    public class BingxCommissionData
+    {
+        [JsonPropertyName("takerCommissionRate")]
+        public double TakerCommissionRate { get; set; }
+
+        [JsonPropertyName("makerCommissionRate")]
+        public double MakerCommissionRate { get; set; }
+    }
+
+
     public class BingxOrderBook
     {
         [JsonPropertyName("code")]

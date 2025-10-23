@@ -463,7 +463,7 @@ namespace CryptoOculus.Services
                             {
                                 if (comissions.Comissions[a].Symbol.Equals(exchangeInfo.Data[i], StringComparison.CurrentCultureIgnoreCase))
                                 {
-                                    pair.SpotComission = comissions.Comissions[a].TakerComission;
+                                    pair.SpotTakerComission = comissions.Comissions[a].TakerComission;
                                     break;
                                 }
                             }

@@ -121,7 +121,7 @@ namespace CryptoOculus.Services
                                 BaseAsset = exchangeInfo.Result.List[i].BaseCoin.ToUpper(),
                                 QuoteAsset = exchangeInfo.Result.List[i].QuoteCoin.ToUpper(),
                                 Url = $"https://www.bybit.com/trade/spot/{exchangeInfo.Result.List[i].BaseCoin.ToUpper()}/{exchangeInfo.Result.List[i].QuoteCoin.ToUpper()}",
-                                SpotComission = 0.0018
+                                SpotTakerComission = 0.0018
                             };
 
                             //adding price of pair

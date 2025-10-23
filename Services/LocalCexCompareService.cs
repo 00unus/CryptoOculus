@@ -114,7 +114,7 @@ namespace CryptoOculus.Services
                 }
             }
 
-            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/Results.json"), JsonSerializer.Serialize(results, Helper.serializeOptions));
+            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/SpreadsLocalCompare.json"), JsonSerializer.Serialize(results, Helper.serializeOptions));
 
             return [.. results];
         }

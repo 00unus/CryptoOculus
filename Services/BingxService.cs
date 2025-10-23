@@ -39,6 +39,15 @@ namespace CryptoOculus.Services
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
         }
+        private void ValidateBingxCommissions(HttpRequestMessage request)
+        {
+            BingxCommission model = ClientService.Deserialize<BingxCommission>(request);
+
+            if (model.Data is null || model.Code != 0)
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
         private void ValidateBingxOrderBook(HttpRequestMessage request)
         {
             BingxOrderBook model = ClientService.Deserialize<BingxOrderBook>(request);
@@ -92,17 +101,36 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<BingxPrices>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query comission
+            /*async Task<BingxCommission> Commissions()
+            {
+                using HMACSHA256 hmac = new(Encoding.UTF8.GetBytes(apiKeys.GetSingle("BingxSecretKey")));
+                long now = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                byte[] computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes($"timestamp={now}&symbol=BTC-USDT"));
+
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/openApi/spot/v1/user/commissionRate?timestamp={now}&symbol=BTC-USDT&signature={Convert.ToHexStringLower(computedHash)}").WithVersion();
+                request.Headers.Host = Hosts[0];
+                request.Headers.Add("X-BX-APIKEY", apiKeys.GetSingle("BingxApiKey"));
+                request.Options.Set(HttpOptionKeys.LimitRuleName, "BingxIpGroup2");
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBingxCommissions);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+                Console.WriteLine(await response.Content.ReadAsStringAsync());
+                return JsonSerializer.Deserialize<BingxCommission>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }*/
+
             try
             {
                 Task<BingxExchangeInfo> exInfoTask = ExInfo();
                 Task<BingxContractAddresses> contractTask = Contract();
                 Task<BingxPrices> pricesTask = Prices();
+                //Task<BingxCommission> commissionsTask = Commissions();
 
                 await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
 
                 BingxExchangeInfo exchangeInfo = await exInfoTask;
                 BingxContractAddresses contractAddresses = await contractTask;
                 BingxPrices prices = await pricesTask;
+                //BingxCommission commissions = await commissionsTask;
 
                 List<Pair> pairs = [];
 
@@ -123,8 +151,10 @@ namespace CryptoOculus.Services
                             {
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
-                                BaseAsset = baseAsset,
-                                QuoteAsset = quoteAsset
+                                BaseAsset = baseAsset.ToUpper(),
+                                QuoteAsset = quoteAsset.ToUpper(),
+                                Url = $"https://bingx.com/spot/{baseAsset.ToUpper()}{quoteAsset.ToUpper()}",
+                                SpotTakerComission = 0.001
                             };
 
                             //adding price of pair
@@ -132,7 +162,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int a = 0; a < prices.Data.Length; a++)
                                 {
-                                    if (prices.Data[a].Symbol == exchangeInfo.Data.Symbols[i].Symbol)
+                                    if (prices.Data[a].Symbol.Equals(exchangeInfo.Data.Symbols[i].Symbol, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Data[a].AskPrice, out double askPrice))
                                         {
@@ -154,7 +184,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int b = 0; b < contractAddresses.Data.Length; b++)
                                 {
-                                    if (contractAddresses.Data[b].Coin == baseAsset)
+                                    if (contractAddresses.Data[b].Coin.Equals(baseAsset, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         List<AssetNetwork> baseAssetNetworks = [];
                                         for (int c = 0; c < contractAddresses.Data[b].NetworkList.Length; c++)
@@ -165,7 +195,9 @@ namespace CryptoOculus.Services
                                                 {
                                                     NetworkName = contractAddresses.Data[b].NetworkList[c].Network,
                                                     DepositEnable = contractAddresses.Data[b].NetworkList[c].DepositEnable,
-                                                    WithdrawEnable = contractAddresses.Data[b].NetworkList[c].WithdrawEnable
+                                                    WithdrawEnable = contractAddresses.Data[b].NetworkList[c].WithdrawEnable,
+                                                    DepositUrl = "https://bingx.com/assets/recharge",
+                                                    WithdrawUrl = "https://bingx.com/assets/withdraw"
                                                 };
 
                                                 //Withraw fee
@@ -209,8 +241,7 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Bingx/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/bingx.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
 
                 return [.. pairs];
             }

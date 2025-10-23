@@ -23,7 +23,7 @@ namespace CryptoOculus.Models
         public double[][]? Bids { get; set; }
 
         public required string Url { get; set; }
-        public required double SpotComission { get; set; }
+        public double? SpotTakerComission { get; set; }
         public AssetNetwork[] BaseAssetNetworks { get; set; } = [];
 
         public Pair() { }
@@ -50,7 +50,7 @@ namespace CryptoOculus.Models
             Bids = pair.Bids?.Select(innerArray => innerArray.ToArray()).ToArray();
 
             Url = pair.Url;
-            SpotComission = pair.SpotComission;
+            SpotTakerComission = pair.SpotTakerComission;
             BaseAssetNetworks = pair.BaseAssetNetworks?.Select(network => new AssetNetwork(network)).ToArray() ?? [];
         }
     }

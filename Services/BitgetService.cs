@@ -111,7 +111,7 @@ namespace CryptoOculus.Services
                                 BaseAsset = exchangeInfo.Data[i].BaseCoin.ToUpper(),
                                 QuoteAsset = exchangeInfo.Data[i].QuoteCoin.ToUpper(),
                                 Url = $"https://www.bitget.com/spot/{exchangeInfo.Data[i].BaseCoin.ToUpper()}{exchangeInfo.Data[i].QuoteCoin.ToUpper()}",
-                                SpotComission = double.Parse(exchangeInfo.Data[i].TakerFeeRate)
+                                SpotTakerComission = double.Parse(exchangeInfo.Data[i].TakerFeeRate)
                             };
 
                             //adding price of pair

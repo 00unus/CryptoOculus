@@ -193,7 +193,7 @@ namespace CryptoOculus.Services
                 Currencies = [.. currencies]
             };
 
-            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/gate-contractAddresses.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/gate-contractAddresses.json"), JsonSerializer.Serialize(contractAddresses, Helper.serializeOptions));
             
             return contractAddresses;
         }
@@ -282,7 +282,7 @@ namespace CryptoOculus.Services
                             BaseAsset = exchangeInfo[i].Base.ToUpper(),
                             QuoteAsset = exchangeInfo[i].Quote.ToUpper(),
                             Url = $"https://www.gate.com/trade/{exchangeInfo[i].Base.ToUpper()}_{exchangeInfo[i].Quote.ToUpper()}",
-                            SpotComission = double.Parse(exchangeInfo[i].Fee) / 100
+                            SpotTakerComission = double.Parse(exchangeInfo[i].Fee) / 100
                         };
 
                         //adding price of pair

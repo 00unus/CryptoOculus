@@ -227,23 +227,70 @@ namespace CryptoOculus
             {
                 return reader.GetString() ?? String.Empty;
             }
+
             else if (reader.TokenType == JsonTokenType.Number)
             {
                 if (reader.TryGetInt32(out int intValue))
                 {
                     return intValue.ToString();
                 }
+
                 else if (reader.TryGetDouble(out double doubleValue))
                 {
                     return doubleValue.ToString();
                 }
             }
+
             throw new JsonException("Unexpected token type for string conversion");
         }
 
         public override void Write(Utf8JsonWriter writer, string value, JsonSerializerOptions options)
         {
             writer.WriteStringValue(value);
+        }
+    }
+
+    public class DictionaryStringConverter : JsonConverter<Dictionary<string, string>>
+    {
+        public override Dictionary<string, string> Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        {
+            if (reader.TokenType != JsonTokenType.StartObject)
+                throw new JsonException();
+
+            var result = new Dictionary<string, string>();
+
+            while (reader.Read())
+            {
+                if (reader.TokenType == JsonTokenType.EndObject)
+                    return result;
+
+                string key = reader.GetString() ?? throw new JsonException("Key cannot be null");
+                reader.Read();
+
+                result[key] = reader.TokenType switch
+                {
+                    JsonTokenType.String => reader.GetString() ?? "",
+                    JsonTokenType.Number => reader.TryGetInt64(out long i) ? i.ToString() : reader.GetDouble().ToString(),
+                    JsonTokenType.True => "true",
+                    JsonTokenType.False => "false",
+                    JsonTokenType.Null => "",
+                    JsonTokenType.StartArray or JsonTokenType.StartObject =>
+                        JsonSerializer.Serialize(JsonDocument.ParseValue(ref reader).RootElement, options),
+                    _ => throw new JsonException($"Unsupported token: {reader.TokenType}")
+                };
+            }
+
+            throw new JsonException("Invalid JSON object");
+        }
+
+        public override void Write(Utf8JsonWriter writer, Dictionary<string, string> value, JsonSerializerOptions options)
+        {
+            writer.WriteStartObject();
+            foreach (var (key, val) in value)
+            {
+                writer.WriteString(key, val ?? "");
+            }
+            writer.WriteEndObject();
         }
     }
 }
