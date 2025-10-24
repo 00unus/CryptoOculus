@@ -184,6 +184,47 @@ namespace CryptoOculus.Models
     }
 
 
+    public class BybitFeeRate
+    {
+        [JsonPropertyName("retCode")]
+        public int RetCode { get; set; }
+
+        [JsonPropertyName("retMsg")]
+        public string? RetMsg { get; set; }
+
+        [JsonPropertyName("result")]
+        public BybitFeeRateResult? Result { get; set; }
+
+        [JsonPropertyName("retExtInfo")]
+        public object? RetExtInfo { get; set; }
+
+        [JsonPropertyName("time")]
+        public long Time { get; set; }
+    }
+    public class BybitFeeRateResult
+    {
+        [JsonPropertyName("category")]
+        public string? Category { get; set; }
+
+        [JsonPropertyName("list")]
+        public required BybitFeeRateList[] List { get; set; }
+    }
+    public class BybitFeeRateList
+    {
+        [JsonPropertyName("symbol")]
+        public required string Symbol { get; set; }
+
+        [JsonPropertyName("baseCoin")]
+        public string? BaseCoin { get; set; }
+
+        [JsonPropertyName("takerFeeRate")]
+        public required string TakerFeeRate { get; set; }
+
+        [JsonPropertyName("makerFeeRate")]
+        public string? MakerFeeRate { get; set; }
+    }
+
+
     public class BybitOrderBook
     {
         [JsonPropertyName("retCode")]

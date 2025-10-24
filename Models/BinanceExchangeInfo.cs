@@ -185,6 +185,19 @@ namespace CryptoOculus.Models
     }
 
 
+    public class BinanceTradeFee
+    {
+        [JsonPropertyName("symbol")]
+        public required string Symbol { get; set; }
+
+        [JsonPropertyName("makerCommission")]
+        public string? MakerCommission { get; set; }
+
+        [JsonPropertyName("takerCommission")]
+        public required string TakerCommission { get; set; }
+    }
+
+
     public class BinanceOrderBook
     {
         public long? LastUpdateId { get; set; }

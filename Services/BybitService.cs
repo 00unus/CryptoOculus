@@ -39,6 +39,15 @@ namespace CryptoOculus.Services
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
         }
+        private void ValidateBybitFeeRate(HttpRequestMessage request)
+        {
+            BybitFeeRate model = ClientService.Deserialize<BybitFeeRate>(request);
+
+            if (model.Result is null || model.RetCode != 0 || model.RetMsg != "OK")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
         private void ValidateBybitOrderBook(HttpRequestMessage request)
         {
             BybitOrderBook model = ClientService.Deserialize<BybitOrderBook>(request);
@@ -92,17 +101,38 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<BybitPrice>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query spot commissions
+            async Task<BybitFeeRate> FeeRate()
+            {
+                using HMACSHA256 hmac = new(Encoding.UTF8.GetBytes(apiKeys.GetSingle("BybitSecretKey")));
+                long now = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                byte[] signature = hmac.ComputeHash(Encoding.UTF8.GetBytes(now + apiKeys.GetSingle("BybitApiKey") + 20000 + "category=spot"));
+
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/v5/account/fee-rate?category=spot").WithVersion();
+                request.Headers.Host = Hosts[0];
+                request.Headers.Add("X-BAPI-API-KEY", apiKeys.GetSingle("BybitApiKey"));
+                request.Headers.Add("X-BAPI-RECV-WINDOW", "20000");
+                request.Headers.Add("X-BAPI-SIGN", Convert.ToHexStringLower(signature));
+                request.Headers.Add("X-BAPI-TIMESTAMP", now.ToString());
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBybitFeeRate);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<BybitFeeRate>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<BybitExchangeInfo> exInfoTask = ExInfo();
                 Task<BybitContractAddress> contractTask = Contract();
                 Task<BybitPrice> pricesTask = Prices();
+                Task<BybitFeeRate> feeRateTask = FeeRate();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, feeRateTask]);
 
                 BybitExchangeInfo exchangeInfo = await exInfoTask;
                 BybitContractAddress contractAddresses = await contractTask;
                 BybitPrice prices = await pricesTask;
+                BybitFeeRate feeRate = await feeRateTask;
 
                 List<Pair> pairs = [];
 
@@ -120,9 +150,21 @@ namespace CryptoOculus.Services
                                 ExchangeName = ExchangeName,
                                 BaseAsset = exchangeInfo.Result.List[i].BaseCoin.ToUpper(),
                                 QuoteAsset = exchangeInfo.Result.List[i].QuoteCoin.ToUpper(),
-                                Url = $"https://www.bybit.com/trade/spot/{exchangeInfo.Result.List[i].BaseCoin.ToUpper()}/{exchangeInfo.Result.List[i].QuoteCoin.ToUpper()}",
-                                SpotTakerComission = 0.0018
+                                Url = $"https://www.bybit.com/trade/spot/{exchangeInfo.Result.List[i].BaseCoin.ToUpper()}/{exchangeInfo.Result.List[i].QuoteCoin.ToUpper()}"
                             };
+
+                            //adding spot taker commision
+                            if (feeRate.Result is not null)
+                            {
+                                for (int a = 0; a < feeRate.Result.List.Length; a++)
+                                {
+                                    if (feeRate.Result.List[a].Symbol.Equals(exchangeInfo.Result.List[i].Symbol))
+                                    {
+                                        pair.SpotTakerComission = double.Parse(feeRate.Result.List[a].TakerFeeRate);
+                                        break;
+                                    }
+                                }
+                            }
 
                             //adding price of pair
                             if (prices.Result is not null)

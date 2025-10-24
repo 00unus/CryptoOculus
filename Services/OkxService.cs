@@ -39,6 +39,15 @@ namespace CryptoOculus.Services
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
         }
+        private void ValidateOkxTradeFee(HttpRequestMessage request)
+        {
+            OkxTradeFee model = ClientService.Deserialize<OkxTradeFee>(request);
+
+            if (model.Code != "0")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
         private void ValidateOkxOrderBook(HttpRequestMessage request)
         {
             OkxOrderBook model = ClientService.Deserialize<OkxOrderBook>(request);
@@ -91,17 +100,37 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<OkxPrices>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query spot commissions
+            async Task<OkxTradeFee> TradeFee()
+            {
+                string now = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.sssZ");
+                byte[] computedHash = new HMACSHA256(Encoding.UTF8.GetBytes(apiKeys.GetSingle("OkxSecretKey"))).ComputeHash(Encoding.UTF8.GetBytes($"{now}GET/api/v5/account/trade-fee?instType=SPOT"));
+
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/api/v5/account/trade-fee?instType=SPOT").WithVersion();
+                request.Headers.Host = Hosts[0];
+                request.Headers.Add("OK-ACCESS-KEY", apiKeys.GetSingle("OkxApiKey"));
+                request.Headers.Add("OK-ACCESS-SIGN", Convert.ToBase64String(computedHash));
+                request.Headers.Add("OK-ACCESS-PASSPHRASE", apiKeys.GetSingle("OkxPassKey"));
+                request.Headers.Add("OK-ACCESS-TIMESTAMP", now);
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateOkxTradeFee);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<OkxTradeFee>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<OkxExchangeInfo> exInfoTask = ExInfo();
                 Task<OkxContractAddresses> contractTask = Contract();
                 Task<OkxPrices> pricesTask = Prices();
+                Task<OkxTradeFee> tradeFeeTask = TradeFee();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, tradeFeeTask]);
 
                 OkxExchangeInfo exchangeInfo = await exInfoTask;
                 OkxContractAddresses contractAddresses = await contractTask;
                 OkxPrices prices = await pricesTask;
+                OkxTradeFee tradeFee = await tradeFeeTask;
 
                 List<Pair> pairs = [];
 
@@ -118,7 +147,9 @@ namespace CryptoOculus.Services
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
                                 BaseAsset = exchangeInfo.Data[i].BaseCcy.ToUpper(),
-                                QuoteAsset = exchangeInfo.Data[i].QuoteCcy.ToUpper()
+                                QuoteAsset = exchangeInfo.Data[i].QuoteCcy.ToUpper(),
+                                Url = $"https://www.okx.com/trade-spot/{exchangeInfo.Data[i].BaseCcy.ToLower()}-{exchangeInfo.Data[i].QuoteCcy.ToLower()}",
+                                SpotTakerComission = Math.Abs(double.Parse(tradeFee.Data[0].Taker))
                             };
 
                             //adding price of pair
@@ -126,7 +157,7 @@ namespace CryptoOculus.Services
                             {
                                 for (int a = 0; a < prices.Data.Length; a++)
                                 {
-                                    if (prices.Data[a].InstId == exchangeInfo.Data[i].InstId)
+                                    if (prices.Data[a].InstId.Equals(exchangeInfo.Data[i].InstId, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Data[a].AskPx, out double askPrice))
                                         {
@@ -150,7 +181,7 @@ namespace CryptoOculus.Services
 
                                 for (int b = 0; b < contractAddresses.Data.Length; b++)
                                 {
-                                    if (contractAddresses.Data[b].Ccy == exchangeInfo.Data[i].BaseCcy)
+                                    if (contractAddresses.Data[b].Ccy.Equals(exchangeInfo.Data[i].BaseCcy, StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (contractAddresses.Data[b].CanDep || contractAddresses.Data[b].CanWd)
                                         {
@@ -160,7 +191,9 @@ namespace CryptoOculus.Services
                                                 NetworkName = splitChainName[1],
                                                 DepositEnable = contractAddresses.Data[b].CanDep,
                                                 WithdrawEnable = contractAddresses.Data[b].CanWd,
-                                                TransferTax = 0
+                                                TransferTax = 0,
+                                                DepositUrl = $"https://www.okx.com/balance/recharge/{contractAddresses.Data[b].Ccy.ToLower()}",
+                                                WithdrawUrl = $"https://www.okx.com/balance/withdrawal/{contractAddresses.Data[b].Ccy.ToLower()}"
                                             };
 
                                             if (!String.IsNullOrWhiteSpace(contractAddresses.Data[b].CtAddr))
@@ -207,9 +240,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Okx/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/okx.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)

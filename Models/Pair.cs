@@ -22,7 +22,7 @@ namespace CryptoOculus.Models
         public double[]? BidPriceRange { get; set; }
         public double[][]? Bids { get; set; }
 
-        public required string Url { get; set; }
+        public string Url { get; set; }
         public double? SpotTakerComission { get; set; }
         public AssetNetwork[] BaseAssetNetworks { get; set; } = [];
 
@@ -64,8 +64,8 @@ namespace CryptoOculus.Models
         public double? TransferTax { get; set; }
         public double? WithdrawFee { get; set; }
         public double? DepositTax { get; set; }
-        public required string DepositUrl { get; set; }
-        public required string WithdrawUrl { get; set; }
+        public string DepositUrl { get; set; }
+        public string WithdrawUrl { get; set; }
 
         public AssetNetwork() { }
 

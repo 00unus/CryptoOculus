@@ -142,30 +142,62 @@ namespace CryptoOculus.Models
     }
 
 
-    public class BingxCommission
+    public class BingxCommissions
     {
         [JsonPropertyName("code")]
         public int Code { get; set; }
 
-        [JsonPropertyName("msg")]
-        public string? Msg { get; set; }
-
-        [JsonPropertyName("debugMsg")]
-        public string? DebugMsg { get; set; }
-
-        [JsonPropertyName("retryable")]
-        public int Retryable { get; set; }
+        [JsonPropertyName("timestamp")]
+        public long Timestamp { get; set; }
 
         [JsonPropertyName("data")]
-        public BingxCommissionData? Data { get; set; }
+        public BingxCommissionsData? Data { get; set; }
     }
-    public class BingxCommissionData
+    public class BingxCommissionsData
     {
-        [JsonPropertyName("takerCommissionRate")]
-        public double TakerCommissionRate { get; set; }
+        [JsonPropertyName("myUpgradeInfo")]
+        public object? MyUpgradeInfo { get; set; }
 
-        [JsonPropertyName("makerCommissionRate")]
-        public double MakerCommissionRate { get; set; }
+        [JsonPropertyName("contractLevelConfigList")]
+        public object[]? ContractLevelConfigList { get; set; }
+
+        [JsonPropertyName("swapLevelConfigList")]
+        public object[]? SwapLevelConfigList { get; set; }
+
+        [JsonPropertyName("spotLevelConfigList")]
+        public required BingxCommissionsSpotLevelConfigList[] SpotLevelConfigList { get; set; }
+
+        [JsonPropertyName("coinSwapLevelConfigList")]
+        public object[]? CoinSwapLevelConfigList { get; set; }
+
+        [JsonPropertyName("isNeverUpgrade")]
+        public int IsNeverUpgrade { get; set; }
+
+        [JsonPropertyName("enableTgVipService")]
+        public bool EnableTgVipService { get; set; }
+    }
+    public class BingxCommissionsSpotLevelConfigList
+    {
+        [JsonPropertyName("vipLevel")]
+        public int VipLevel { get; set; }
+
+        [JsonPropertyName("highestVipLevel")]
+        public bool HighestVipLevel { get; set; }
+
+        [JsonPropertyName("minAssetAmount")]
+        public string? MinAssetAmount { get; set; }
+
+        [JsonPropertyName("maxSpotApiTradePercentage")]
+        public string? MaxSpotApiTradePercentage { get; set; }
+
+        [JsonPropertyName("minSpotTradeAmount")]
+        public string? MinSpotTradeAmount { get; set; }
+
+        [JsonPropertyName("spotMakerCommission")]
+        public string? SpotMakerCommission { get; set; }
+
+        [JsonPropertyName("spotTakerCommission")]
+        public required string SpotTakerCommission { get; set; }
     }
 
 

@@ -9,7 +9,7 @@ namespace CryptoOculus.Services
     {
         public int ExchangeId { get; } = 6;
         public string ExchangeName { get; } = "BingX";
-        public string[] Hosts { get; } = ["open-api.bingx.com"];
+        public string[] Hosts { get; } = ["open-api.bingx.com", "bingx.com"];
         public string[] Ips { get; set; } = [];
 
         private void ValidateBingxExchangeInfo(HttpRequestMessage request)
@@ -41,7 +41,7 @@ namespace CryptoOculus.Services
         }
         private void ValidateBingxCommissions(HttpRequestMessage request)
         {
-            BingxCommission model = ClientService.Deserialize<BingxCommission>(request);
+            BingxCommissions model = ClientService.Deserialize<BingxCommissions>(request);
 
             if (model.Data is null || model.Code != 0)
             {
@@ -56,6 +56,13 @@ namespace CryptoOculus.Services
             {
                 throw new HttpRequestException("Incorrect response or Ex error code");
             }
+        }
+
+        private static string GenerateSign(string timestamp, string traceId, string deviceId, string platformId, string appVersion, string antiDeviceId = "")
+        {
+            string stringToSign = $"95d65c73dc5c4370ae9018fb7f2eab69{timestamp}{traceId}{deviceId}{platformId}{appVersion}{antiDeviceId}{{}}";
+
+            return Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(stringToSign)));
         }
 
         public async Task<Pair[]> GetPairs()
@@ -102,35 +109,44 @@ namespace CryptoOculus.Services
             }
 
             //Query comission
-            /*async Task<BingxCommission> Commissions()
+            async Task<BingxCommissions> Commissions()
             {
-                using HMACSHA256 hmac = new(Encoding.UTF8.GetBytes(apiKeys.GetSingle("BingxSecretKey")));
-                long now = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-                byte[] computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes($"timestamp={now}&symbol=BTC-USDT"));
+                string timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString();
+                string traceId = Guid.NewGuid().ToString("N");
+                string deviceId = Guid.NewGuid().ToString("N");
+                string platformId = "30";
+                string appVersion = "5.1.30";
 
-                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/openApi/spot/v1/user/commissionRate?timestamp={now}&symbol=BTC-USDT&signature={Convert.ToHexStringLower(computedHash)}").WithVersion();
-                request.Headers.Host = Hosts[0];
-                request.Headers.Add("X-BX-APIKEY", apiKeys.GetSingle("BingxApiKey"));
-                request.Options.Set(HttpOptionKeys.LimitRuleName, "BingxIpGroup2");
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[1]}/api/user-service/v1/vip/overview").WithVersion();
+                request.Headers.Host = Hosts[1];
+                request.Headers.UserAgent.TryParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0");
+                request.Headers.Add("platformId", platformId);
+                request.Headers.Add("app_version", appVersion);
+                request.Headers.Add("device_id", deviceId);
+                request.Headers.Add("lang", "en");
+                request.Headers.Add("traceId", traceId);
+                request.Headers.Add("timestamp", timestamp);
+                request.Headers.Add("sign", GenerateSign(timestamp, traceId, deviceId, platformId, appVersion));
+
                 request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBingxCommissions);
                 HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
-                Console.WriteLine(await response.Content.ReadAsStringAsync());
-                return JsonSerializer.Deserialize<BingxCommission>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
-            }*/
+
+                return JsonSerializer.Deserialize<BingxCommissions>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
 
             try
             {
                 Task<BingxExchangeInfo> exInfoTask = ExInfo();
                 Task<BingxContractAddresses> contractTask = Contract();
                 Task<BingxPrices> pricesTask = Prices();
-                //Task<BingxCommission> commissionsTask = Commissions();
+                Task<BingxCommissions> commissionsTask = Commissions();
 
                 await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
 
                 BingxExchangeInfo exchangeInfo = await exInfoTask;
                 BingxContractAddresses contractAddresses = await contractTask;
                 BingxPrices prices = await pricesTask;
-                //BingxCommission commissions = await commissionsTask;
+                BingxCommissions commissions = await commissionsTask;
 
                 List<Pair> pairs = [];
 
@@ -153,9 +169,14 @@ namespace CryptoOculus.Services
                                 ExchangeName = ExchangeName,
                                 BaseAsset = baseAsset.ToUpper(),
                                 QuoteAsset = quoteAsset.ToUpper(),
-                                Url = $"https://bingx.com/spot/{baseAsset.ToUpper()}{quoteAsset.ToUpper()}",
-                                SpotTakerComission = 0.001
+                                Url = $"https://bingx.com/spot/{baseAsset.ToUpper()}{quoteAsset.ToUpper()}"
                             };
+
+                            //Adding spot taker commision
+                            if (commissions.Data is not null)
+                            {
+                                pair.SpotTakerComission = double.Parse(commissions.Data.SpotLevelConfigList[0].SpotTakerCommission) / 100;
+                            }
 
                             //adding price of pair
                             if (prices.Data is not null)

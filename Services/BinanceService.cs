@@ -24,6 +24,10 @@ namespace CryptoOculus.Services
         {
             _ = ClientService.Deserialize<BinancePrice[]>(request);
         }
+        private void ValidateBinanceTradeFee(HttpRequestMessage request)
+        {
+            _ = ClientService.Deserialize<BinanceTradeFee[]>(request);
+        }
         private void ValidateBinanceOrderBook(HttpRequestMessage request)
         {
             _ = ClientService.Deserialize<BinanceOrderBook>(request);
@@ -69,17 +73,35 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<BinancePrice[]>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query spot commissions
+            async Task<BinanceTradeFee[]> TradeFee()
+            {
+                using HMACSHA256 hmac = new(Encoding.UTF8.GetBytes(apiKeys.GetSingle("BinanceSecretKey")!));
+                long now = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                byte[] computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes($"recvWindow=20000&timestamp={now}"));
+
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[0]}/sapi/v1/asset/tradeFee?recvWindow=20000&timestamp={now}&signature={Convert.ToHexStringLower(computedHash)}").WithVersion();
+                request.Headers.Host = Hosts[0];
+                request.Headers.Add("X-MBX-APIKEY", apiKeys.GetSingle("BinanceApiKey"));
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateBinanceTradeFee);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<BinanceTradeFee[]>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<BinanceExchangeInfo> exInfoTask = ExInfo();
                 Task<BinanceContractAddresses[]> contractTask = Contract();
                 Task<BinancePrice[]> pricesTask = Prices();
+                Task<BinanceTradeFee[]> tradeFeeTask = TradeFee();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, tradeFeeTask]);
 
                 BinanceExchangeInfo exchangeInfo = await exInfoTask;
                 BinanceContractAddresses[] contractAddresses = await contractTask;
                 BinancePrice[] prices = await pricesTask;
+                BinanceTradeFee[] tradeFee = await tradeFeeTask;
 
                 List<Pair> pairs = [];
 
@@ -95,9 +117,18 @@ namespace CryptoOculus.Services
                             ExchangeName = ExchangeName,
                             BaseAsset = exchangeInfo.Symbols[i].BaseAsset.ToUpper(),
                             QuoteAsset = exchangeInfo.Symbols[i].QuoteAsset.ToUpper(),
-                            Url = $"https://www.binance.com/trade/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}?type=spot",
-                            SpotTakerComission = 0.001
+                            Url = $"https://www.binance.com/trade/{exchangeInfo.Symbols[i].BaseAsset.ToUpper()}_{exchangeInfo.Symbols[i].QuoteAsset.ToUpper()}?type=spot"
                         };
+
+                        //adding spot taker commision
+                        for (int a = 0; a < tradeFee.Length; a++)
+                        {
+                            if (tradeFee[a].Symbol.Equals(exchangeInfo.Symbols[i].Symbol))
+                            {
+                                pair.SpotTakerComission = double.Parse(tradeFee[a].TakerCommission);
+                                break;
+                            }
+                        }
 
                         //adding price of pair
                         for (int a = 0; a < prices.Length; a++)

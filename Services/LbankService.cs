@@ -196,7 +196,7 @@ namespace CryptoOculus.Services
                     Currencies = [.. currencies]
                 };
 
-                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/Lbank/contractAddresses.json"), JsonSerializer.Serialize(contractAddresses, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/lbank-contractAddresses.json"), JsonSerializer.Serialize(contractAddresses, Helper.serializeOptions));
 
                 return contractAddresses;
             }
@@ -254,8 +254,7 @@ namespace CryptoOculus.Services
                 Comissions = [.. comissions]
             };
 
-            using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Lbank/comissions.json"));
-            sw.Write(JsonSerializer.Serialize<LbankComissions>(lbankComissions, Helper.serializeOptions));
+            await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/lbank-comissions.json"), JsonSerializer.Serialize(lbankComissions, Helper.serializeOptions));
 
             return lbankComissions;
         }
@@ -312,7 +311,7 @@ namespace CryptoOculus.Services
                 //Query currency details and the smart contract address
                 async Task<LbankContractAddresses> ContractAddresses()
                 {
-                    string path = Path.Combine(env.ContentRootPath, "Cache/Lbank/contractAddresses.json");
+                    string path = Path.Combine(env.ContentRootPath, "Cache/lbank-contractAddresses.json");
 
                     if (File.Exists(path))
                     {
@@ -331,7 +330,7 @@ namespace CryptoOculus.Services
                 //Query spot comissions
                 async Task<LbankComissions> Comissions()
                 {
-                    string path = Path.Combine(env.ContentRootPath, "Cache/Lbank/comissions.json");
+                    string path = Path.Combine(env.ContentRootPath, "Cache/lbank-comissions.json");
 
                     if (File.Exists(path))
                     {
@@ -391,15 +390,26 @@ namespace CryptoOculus.Services
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
                                 BaseAsset = split[0].ToUpper(),
-                                QuoteAsset = split[1].ToUpper()
+                                QuoteAsset = split[1].ToUpper(),
+                                Url = $"https://www.lbank.com/trade/{split[0].ToLower()}_{split[1].ToLower()}"
                             };
+
+                            //adding spot taker commision
+                            for (int a = 0; a < comissions.Comissions.Length; a++)
+                            {
+                                if (comissions.Comissions[a].Symbol.Equals(exchangeInfo.Data[i]))
+                                {
+                                    pair.SpotTakerComission = comissions.Comissions[a].TakerComission;
+                                    break;
+                                }
+                            }
 
                             //adding price of pair
                             if (prices.Data is not null)
                             {
                                 for (int a = 0; a < prices.Data.Length; a++)
                                 {
-                                    if (prices.Data[a].Symbol == exchangeInfo.Data[i])
+                                    if (prices.Data[a].Symbol.Equals(exchangeInfo.Data[i], StringComparison.CurrentCultureIgnoreCase))
                                     {
                                         if (double.TryParse(prices.Data[a].Ticker.Latest, out double lastPrice))
                                         {
@@ -429,7 +439,9 @@ namespace CryptoOculus.Services
                                                 Address = contractAddresses.Currencies[b].Networks[c].Address,
                                                 DepositEnable = contractAddresses.Currencies[b].Networks[c].DepositEnable,
                                                 WithdrawEnable = contractAddresses.Currencies[b].Networks[c].WithdrawEnable,
-                                                TransferTax = contractAddresses.Currencies[b].Networks[c].TransferTax
+                                                TransferTax = contractAddresses.Currencies[b].Networks[c].TransferTax,
+                                                DepositUrl = $"https://www.lbank.com/wallet/account/main/deposit/crypto/{contractAddresses.Currencies[b].Currency.ToLower()}",
+                                                WithdrawUrl = $"https://www.lbank.com/wallet/account/main/withdrawal/crypto/{contractAddresses.Currencies[b].Currency.ToLower()}/chain"
                                             };
 
                                             if (contractAddresses.Currencies[b].Networks[c].WithdrawFee is not null)
@@ -476,8 +488,7 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Lbank/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize<List<Pair>>(pairs, Helper.serializeOptions));
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/lbank.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
 
                 return [.. pairs];
             }

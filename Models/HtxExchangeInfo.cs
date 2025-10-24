@@ -228,6 +228,47 @@ namespace CryptoOculus.Models
     }
 
 
+    public class HtxRateInfo
+    {
+        [JsonPropertyName("status")]
+        public string? Status { get; set; }
+
+        [JsonPropertyName("data")]
+        public HtxRateInfoData? Data { get; set; }
+    }
+    public class HtxRateInfoData
+    {
+        [JsonPropertyName("rate-list")]
+        public required HtxRateInfoRateList[] RateList { get; set; }
+    }
+    public class HtxRateInfoRateList
+    {
+        [JsonPropertyName("type")]
+        public int Type { get; set; }
+
+        [JsonPropertyName("level")]
+        public int Level { get; set; }
+
+        [JsonPropertyName("volume")]
+        public string? Volume { get; set; }
+
+        [JsonPropertyName("holdings")]
+        public string? Holdings { get; set; }
+
+        [JsonPropertyName("maker-fee-rate")]
+        public string? MakerFeeRate { get; set; }
+
+        [JsonPropertyName("maker-deduction")]
+        public string? MakerDeduction { get; set; }
+
+        [JsonPropertyName("taker-fee-rate")]
+        public required string TakerFeeRate { get; set; }
+
+        [JsonPropertyName("taker-deduction")]
+        public string? TakerDeduction { get; set; }
+    }
+
+
     public class HtxOrderBook
     {
         [JsonPropertyName("ch")]

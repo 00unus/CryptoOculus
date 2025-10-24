@@ -171,6 +171,63 @@ namespace CryptoOculus.Models
     }
 
 
+    public class OkxTradeFee
+    {
+        [JsonPropertyName("code")]
+        public string? Code { get; set; }
+
+        [JsonPropertyName("data")]
+        public required OkxTradeFeeData[] Data { get; set; }
+
+        [JsonPropertyName("msg")]
+        public string? Msg { get; set; }
+    }
+    public class OkxTradeFeeData
+    {
+        [JsonPropertyName("category")]
+        public string? Category { get; set; }
+
+        [JsonPropertyName("delivery")]
+        public string? Delivery { get; set; }
+
+        [JsonPropertyName("exercise")]
+        public string? Exercise { get; set; }
+
+        [JsonPropertyName("fiat")]
+        public object[]? Fiat { get; set; }
+
+        [JsonPropertyName("instType")]
+        public string? InstType { get; set; }
+
+        [JsonPropertyName("level")]
+        public string? Level { get; set; }
+
+        [JsonPropertyName("maker")]
+        public string? Maker { get; set; }
+
+        [JsonPropertyName("makerU")]
+        public string? MakerU { get; set; }
+
+        [JsonPropertyName("makerUSDC")]
+        public string? MakerUSDC { get; set; }
+
+        [JsonPropertyName("ruleType")]
+        public string? RuleType { get; set; }
+
+        [JsonPropertyName("taker")]
+        public required string Taker { get; set; }
+
+        [JsonPropertyName("takerU")]
+        public string? TakerU { get; set; }
+
+        [JsonPropertyName("takerUSDC")]
+        public string? TakerUSDC { get; set; }
+
+        [JsonPropertyName("ts")]
+        public string? Ts { get; set; }
+    }
+
+
     public class OkxOrderBook
     {
         public string? Code { get; set; }

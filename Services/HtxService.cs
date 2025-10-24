@@ -7,7 +7,7 @@ namespace CryptoOculus.Services
     {
         public int ExchangeId { get; } = 8;
         public string ExchangeName { get; } = "HTX";
-        public string[] Hosts { get; } = ["api.huobi.pro"];
+        public string[] Hosts { get; } = ["api.huobi.pro", "www.htx.com"];
         public string[] Ips { get; set; } = [];
 
         private void ValidateHtxExchangeInfo(HttpRequestMessage request)
@@ -31,6 +31,15 @@ namespace CryptoOculus.Services
         private void ValidateHtxPrices(HttpRequestMessage request)
         {
             HtxPrices model = ClientService.Deserialize<HtxPrices>(request);
+
+            if (model.Data is null || model.Status != "ok")
+            {
+                throw new HttpRequestException("Incorrect response or Ex error code");
+            }
+        }
+        private void ValidateHtxRateInfo(HttpRequestMessage request)
+        {
+            HtxRateInfo model = ClientService.Deserialize<HtxRateInfo>(request);
 
             if (model.Data is null || model.Status != "ok")
             {
@@ -82,17 +91,30 @@ namespace CryptoOculus.Services
                 return JsonSerializer.Deserialize<HtxPrices>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
             }
 
+            //Query spot commissions
+            async Task<HtxRateInfo> Comissions()
+            {
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"https://{Ips[1]}/-/x/pro/v1/step-rate/user-step-rate/info").WithVersion();
+                request.Headers.Host = Hosts[1];
+                request.Options.Set(HttpOptionKeys.ValidationDelegate, ValidateHtxRateInfo);
+                HttpResponseMessage response = await httpClientFactory.CreateClient("Standard").SendAsync(request);
+
+                return JsonSerializer.Deserialize<HtxRateInfo>(await response.Content.ReadAsStringAsync(), Helper.deserializeOptions)!;
+            }
+
             try
             {
                 Task<HtxExchangeInfo> exInfoTask = ExInfo();
                 Task<HtxContractAddresses> contractTask = Contract();
                 Task<HtxPrices> pricesTask = Prices();
+                Task<HtxRateInfo> comissionsTask = Comissions();
 
-                await Task.WhenAll([exInfoTask, contractTask, pricesTask]);
+                await Task.WhenAll([exInfoTask, contractTask, pricesTask, comissionsTask]);
 
                 HtxExchangeInfo exchangeInfo = await exInfoTask;
                 HtxContractAddresses contractAddresses = await contractTask;
                 HtxPrices prices = await pricesTask;
+                HtxRateInfo comissions = await comissionsTask;
 
                 List<Pair> pairs = [];
 
@@ -109,8 +131,15 @@ namespace CryptoOculus.Services
                                 ExchangeId = ExchangeId,
                                 ExchangeName = ExchangeName,
                                 BaseAsset = exchangeInfo.Data[i].Basecurrency.ToUpper(),
-                                QuoteAsset = exchangeInfo.Data[i].Quotecurrency.ToUpper()
+                                QuoteAsset = exchangeInfo.Data[i].Quotecurrency.ToUpper(),
+                                Url = $"https://www.htx.com/trade/{exchangeInfo.Data[i].Basecurrency.ToLower()}_{exchangeInfo.Data[i].Quotecurrency.ToLower()}"
                             };
+
+                            //adding spot taker commision
+                            if (comissions.Data is not null)
+                            {
+                                pair.SpotTakerComission = double.Parse(comissions.Data.RateList[0].TakerFeeRate);
+                            }
 
                             //adding price of pair
                             if (prices.Data is not null)
@@ -145,7 +174,9 @@ namespace CryptoOculus.Services
                                                     NetworkName = contractAddresses.Data[a].Chains[b].DisplayName,
                                                     DepositEnable = contractAddresses.Data[a].Chains[b].DepositStatus == "allowed",
                                                     WithdrawEnable = contractAddresses.Data[a].Chains[b].WithdrawStatus == "allowed",
-                                                    TransferTax = 0
+                                                    TransferTax = 0,
+                                                    DepositUrl = $"https://www.htx.com/en-us/finance/deposit/{contractAddresses.Data[a].Currency.ToLower()}",
+                                                    WithdrawUrl = $"https://www.htx.com/en-us/finance/withdraw/{contractAddresses.Data[a].Currency.ToLower()}"
                                                 };
 
                                                 if (double.TryParse(contractAddresses.Data[a].Chains[b].TransactFeeWithdraw, out double transactFeeWithdraw))
@@ -193,9 +224,8 @@ namespace CryptoOculus.Services
                     }
                 }
 
-                using StreamWriter sw = new(Path.Combine(env.ContentRootPath, "Cache/Htx/firstStepPairs.json"));
-                sw.Write(JsonSerializer.Serialize(pairs, Helper.serializeOptions));
-
+                await File.WriteAllTextAsync(Path.Combine(env.ContentRootPath, "Cache/htx.json"), JsonSerializer.Serialize(pairs, Helper.serializeOptions));
+                
                 return [.. pairs];
             }
             catch (Exception ex)
